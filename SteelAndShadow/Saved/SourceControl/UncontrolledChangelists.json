@@ -6,6 +6,12 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/Maps/Minimal_Default.umap",
+				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/Maps/SlashOpenWorld_HLODLayer_Instanced.uasset",
+				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/Maps/SlashOpenWorld_HLODLayer_Merged.uasset",
+				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/__ExternalActors__/Maps/SlashOpenWorld/F/50/E32K80QIJKA33SEH12OVJX.uasset",
+				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/__ExternalActors__/Maps/SlashOpenWorld/E/7N/X2XK80V6RXU11V0SOL5N93.uasset",
+				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/Maps/SlashOpenWorld.umap",
 				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/Maps/Minimal_Default_HLOD0_Instancing.uasset",
 				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/__ExternalActors__/Maps/Minimal_Default/8/JN/HBORZ0VHCN147W3QJO194J.uasset",
 				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/__ExternalObjects__/Maps/Minimal_Default/A/FK/GCQ5LHZ0YNZLCCHWB19T24.uasset",
@@ -150,8 +156,7 @@
 				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/__ExternalActors__/Maps/Minimal_Default/2/RU/201JKYMEQ69E3XN80E8RVI.uasset",
 				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/__ExternalActors__/Maps/Minimal_Default/B/6X/Z79DU8D6Y9F0KLNHZJT94G.uasset",
 				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/__ExternalActors__/Maps/Minimal_Default/D/KG/G6UW0C25PZXDFX6Z9W1GP7.uasset",
-				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/__ExternalActors__/Maps/Minimal_Default/0/CB/6CR85NRSDUQJ81VAC6XP3R.uasset",
-				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/Maps/Minimal_Default.umap"
+				"C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Content/__ExternalActors__/Maps/Minimal_Default/0/CB/6CR85NRSDUQJ81VAC6XP3R.uasset"
 			]
 		}
 	]
