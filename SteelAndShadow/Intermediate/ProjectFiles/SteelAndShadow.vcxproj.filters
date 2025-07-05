@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\SteelAndShadow.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SteelAndShadow.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\SteelAndShadowEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\SteelAndShadow.png" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\SteelAndShadow">
+      <UniqueIdentifier>{57582025-C548-34C4-BD15-54D7F03F3671}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SteelAndShadow\SteelAndShadow.Build.cs">
+      <Filter>Source\SteelAndShadow</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\SteelAndShadow\SteelAndShadow.cpp">
+      <Filter>Source\SteelAndShadow</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SteelAndShadow\SteelAndShadow.h">
+      <Filter>Source\SteelAndShadow</Filter>
+    </ClInclude>
+    <Filter Include="Source\SteelAndShadow\Private">
+      <UniqueIdentifier>{7F27DCC1-7CAE-3620-9C65-FD14B1681B01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SteelAndShadow\Private\Items">
+      <UniqueIdentifier>{6A600208-1427-38C0-9E11-A5BE93A28B47}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Item.cpp">
+      <Filter>Source\SteelAndShadow\Private\Items</Filter>
+    </ClCompile>
+    <Filter Include="Source\SteelAndShadow\Public">
+      <UniqueIdentifier>{7DF697B8-6001-36B9-8915-70079C7CC0DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SteelAndShadow\Public\Items">
+      <UniqueIdentifier>{D59A3E0D-F2D9-34EA-B33F-6750027E91A5}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Item.h">
+      <Filter>Source\SteelAndShadow\Public\Items</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

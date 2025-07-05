@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-SteelAndShadow.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\SteelAndShadowEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderOldest.h.obj"
+"C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\UnrealEditor\Development\SteelAndShadow\Item.gen.cpp.obj"
+"C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\UnrealEditor\Development\SteelAndShadow\SteelAndShadow.init.gen.cpp.obj"
+"C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\UnrealEditor\Development\SteelAndShadow\SteelAndShadow.cpp.obj"
+"C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\UnrealEditor\Development\SteelAndShadow\Item.cpp.obj"
+"C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\UnrealEditor\Development\SteelAndShadow\Default.rc2.res"
+/OUT:"C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\UnrealEditor\Development\SteelAndShadow\UnrealEditor-SteelAndShadow.lib"
