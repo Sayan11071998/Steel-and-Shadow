@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "SteelAndShadow",
+			"Path": "..\\Source\\SteelAndShadow.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SteelAndShadowEditor",
+			"Path": "..\\Source\\SteelAndShadowEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
