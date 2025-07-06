@@ -59,4 +59,9 @@
       <Filter>Source\SteelAndShadow\Public\Items</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\SteelAndShadow\DebugMacros.h">
+      <Filter>Source\SteelAndShadow</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

@@ -1,6 +1,5 @@
 #include "Items/Item.h"
-#include "DrawDebugHelpers.h"
-#include "SteelAndShadow/SteelAndShadow.h"
+#include "SteelAndShadow/DebugMacros.h"
 
 AItem::AItem()
 {
