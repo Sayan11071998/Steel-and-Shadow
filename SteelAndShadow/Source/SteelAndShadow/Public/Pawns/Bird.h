@@ -20,4 +20,7 @@ protected:
 private:
 	UPROPERTY(VisibleAnywhere)
 	class UCapsuleComponent* Capsule;
+
+	UPROPERTY(VisibleAnywhere)
+	class USkeletalMeshComponent* BirdMesh;
 };
