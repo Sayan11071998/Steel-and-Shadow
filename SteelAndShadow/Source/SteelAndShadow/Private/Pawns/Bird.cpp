@@ -36,5 +36,9 @@ void ABird::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void ABird::MoveForward(float Value)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Value: %f"), Value);
+	if (Controller && (Value != 0.f))
+	{
+		FVector Forward = GetActorForwardVector();
+		AddMovementInput(Forward, Value);
+	}
 }
