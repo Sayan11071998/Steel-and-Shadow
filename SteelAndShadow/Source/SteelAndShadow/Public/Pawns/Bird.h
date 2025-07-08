@@ -25,4 +25,10 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 	class USkeletalMeshComponent* BirdMesh;
+
+	UPROPERTY(VisibleAnywhere)
+	class USpringArmComponent* CameraBoom;
+
+	UPROPERTY(VisibleAnywhere)
+	class UCameraComponent* ViewCamera;
 };
