@@ -264,12 +264,16 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\SteelAndShadow\SteelAndShadow.h"/>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Characters\SlashCharacter.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Item.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Pawns\Bird.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\SlashCharacter.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Item.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Pawns\Bird.h"/>
   </ItemGroup>
