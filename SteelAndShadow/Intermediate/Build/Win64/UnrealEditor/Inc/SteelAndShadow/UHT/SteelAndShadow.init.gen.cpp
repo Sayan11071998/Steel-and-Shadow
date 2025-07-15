@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeSteelAndShadow_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xF353301B,
-				0xB749E426,
+				0x13B59373,
+				0xCF45529B,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_SteelAndShadow.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_SteelAndShadow.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_SteelAndShadow(Z_Construct_UPackage__Script_SteelAndShadow, TEXT("/Script/SteelAndShadow"), Z_Registration_Info_UPackage__Script_SteelAndShadow, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xF353301B, 0xB749E426));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_SteelAndShadow(Z_Construct_UPackage__Script_SteelAndShadow, TEXT("/Script/SteelAndShadow"), Z_Registration_Info_UPackage__Script_SteelAndShadow, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x13B59373, 0xCF45529B));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
