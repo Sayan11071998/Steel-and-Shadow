@@ -9,12 +9,16 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
 #ifdef STEELANDSHADOW_Item_generated_h
 #error "Item.generated.h already included, missing '#pragma once' in Item.h"
 #endif
 #define STEELANDSHADOW_Item_generated_h
 
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Items_Item_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnSphereOverlap); \
 	DECLARE_FUNCTION(execTransformedCos); \
 	DECLARE_FUNCTION(execTransformedSin);
 
