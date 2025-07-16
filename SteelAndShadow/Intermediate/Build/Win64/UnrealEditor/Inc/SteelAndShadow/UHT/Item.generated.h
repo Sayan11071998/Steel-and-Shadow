@@ -18,6 +18,7 @@ struct FHitResult;
 #define STEELANDSHADOW_Item_generated_h
 
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Items_Item_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnSphereEndOverlap); \
 	DECLARE_FUNCTION(execOnSphereOverlap); \
 	DECLARE_FUNCTION(execTransformedCos); \
 	DECLARE_FUNCTION(execTransformedSin);
