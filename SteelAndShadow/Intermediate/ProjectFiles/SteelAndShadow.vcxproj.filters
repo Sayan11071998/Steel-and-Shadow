@@ -61,6 +61,12 @@
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Item.cpp">
       <Filter>Source\SteelAndShadow\Private\Items</Filter>
     </ClCompile>
+    <Filter Include="Source\SteelAndShadow\Private\Items\Weapons">
+      <UniqueIdentifier>{115583C3-4C46-35BC-8651-83466BD0C3CC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Weapons\Weapon.cpp">
+      <Filter>Source\SteelAndShadow\Private\Items\Weapons</Filter>
+    </ClCompile>
     <Filter Include="Source\SteelAndShadow\Private\Pawns">
       <UniqueIdentifier>{7FECC693-6E8A-33CF-B883-F96F356EF1F1}</UniqueIdentifier>
     </Filter>
@@ -84,6 +90,12 @@
     </Filter>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Item.h">
       <Filter>Source\SteelAndShadow\Public\Items</Filter>
+    </ClInclude>
+    <Filter Include="Source\SteelAndShadow\Public\Items\Weapons">
+      <UniqueIdentifier>{65750184-60E4-3AD1-A3E8-2B1B26E7E851}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Weapons\Weapon.h">
+      <Filter>Source\SteelAndShadow\Public\Items\Weapons</Filter>
     </ClInclude>
     <Filter Include="Source\SteelAndShadow\Public\Pawns">
       <UniqueIdentifier>{A6DB40D1-4FA1-3FBD-8FF0-234430A73BBD}</UniqueIdentifier>
