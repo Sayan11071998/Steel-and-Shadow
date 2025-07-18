@@ -104,4 +104,9 @@
       <Filter>Source\SteelAndShadow\Public\Pawns</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\CharacterTypes.h">
+      <Filter>Source\SteelAndShadow\Public\Characters</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
