@@ -9,6 +9,9 @@ class STEELANDSHADOW_API AWeapon : public AItem
 {
 	GENERATED_BODY()
 
+public:
+	void Equip(USceneComponent* InParent, FName InSocketName);
+
 protected:
 	virtual void OnSphereOverlap
 	(

@@ -218,7 +218,11 @@
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\bodysetup.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\physicsasset.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\fx\\niagara\\intermediate\\build\\win64\\unrealeditor\\inc\\niagara\\uht\\niagaradatainterfacephysicsasset.generated.h",
-            "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\runtime\\hairstrands\\intermediate\\build\\win64\\unrealeditor\\inc\\hairstrandscore\\uht\\groomcomponent.generated.h"
+            "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\runtime\\hairstrands\\intermediate\\build\\win64\\unrealeditor\\inc\\hairstrandscore\\uht\\groomcomponent.generated.h",
+            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\source\\steelandshadow\\public\\items\\item.h",
+            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\item.generated.h",
+            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\source\\steelandshadow\\public\\items\\weapons\\weapon.h",
+            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\weapon.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

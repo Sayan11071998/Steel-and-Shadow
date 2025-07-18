@@ -21,6 +21,7 @@ protected:
 	void MoveRight(float Value);
 	void Turn(float Value);
 	void LookUp(float Value);
+	void EKeyPressed();
 
 private:
 	UPROPERTY(VisibleAnywhere)
@@ -34,4 +35,10 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category = Hair)
 	class UGroomComponent* Eyebrows;
+
+	UPROPERTY(VisibleInstanceOnly)
+	class AItem* OverlappingItem;
+
+public:
+	FORCEINLINE void SetOverlappingItem(class AItem* Item) { OverlappingItem = Item; }
 };
