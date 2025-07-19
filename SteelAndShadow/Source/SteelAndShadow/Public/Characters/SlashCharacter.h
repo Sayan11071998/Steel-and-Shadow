@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "CharacterTypes.h"
 #include "SlashCharacter.generated.h"
 
 UCLASS()
@@ -21,8 +22,11 @@ protected:
 	void MoveRight(float Value);
 	void Turn(float Value);
 	void LookUp(float Value);
+	void EKeyPressed();
 
 private:
+	ECharacterState CharacterState = ECharacterState::ECS_Unequipped;
+
 	UPROPERTY(VisibleAnywhere)
 	class USpringArmComponent* CameraBoom;
 
@@ -34,4 +38,11 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category = Hair)
 	class UGroomComponent* Eyebrows;
+
+	UPROPERTY(VisibleInstanceOnly)
+	class AItem* OverlappingItem;
+
+public:
+	FORCEINLINE void SetOverlappingItem(class AItem* Item) { OverlappingItem = Item; }
+	FORCEINLINE ECharacterState GetCharacterState() const { return CharacterState; }
 };
