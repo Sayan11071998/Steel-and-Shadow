@@ -4,6 +4,12 @@
 #include "GameFramework/Actor.h"
 #include "Item.generated.h"
 
+enum class EItemState : uint8
+{
+	EIS_Hovering,
+	EIS_Equipped
+};
+
 UCLASS()
 class STEELANDSHADOW_API AItem : public AActor
 {
@@ -53,6 +59,8 @@ protected:
 
 	template<typename T>
 	T Avg(T First, T Second);
+
+	EItemState ItemState = EItemState::EIS_Hovering;
 
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
