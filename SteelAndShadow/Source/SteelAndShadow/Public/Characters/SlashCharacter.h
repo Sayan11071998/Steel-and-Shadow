@@ -23,9 +23,32 @@ protected:
 	void Turn(float Value);
 	void LookUp(float Value);
 	void EKeyPressed();
+	void Attack();
+
+	void PlayAttackMontage();
+	void PlayEquipMontage(FName SectionName);
+
+	bool CanAttack();
+	bool CanDisarm();
+	bool CanArm();
+
+	UFUNCTION(BlueprintCallable)
+	void AttackEnd();
+
+	UFUNCTION(BlueprintCallable)
+	void Arm();
+
+	UFUNCTION(BlueprintCallable)
+	void Disarm();
+
+	UFUNCTION(BlueprintCallable)
+	void FinishEquipping();
 
 private:
 	ECharacterState CharacterState = ECharacterState::ECS_Unequipped;
+
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	EActionState ActionState = EActionState::EAS_Unoccupied;
 
 	UPROPERTY(VisibleAnywhere)
 	class USpringArmComponent* CameraBoom;
@@ -41,6 +64,15 @@ private:
 
 	UPROPERTY(VisibleInstanceOnly)
 	class AItem* OverlappingItem;
+
+	UPROPERTY(EditDefaultsOnly, Category = Montages)
+	class UAnimMontage* AttackMontage;
+
+	UPROPERTY(EditDefaultsOnly, Category = Montages)
+	class UAnimMontage* EquipMontage;
+
+	UPROPERTY(VisibleAnywhere, Category = Weapon)
+	class AWeapon* EquippedWeapon;
 
 public:
 	FORCEINLINE void SetOverlappingItem(class AItem* Item) { OverlappingItem = Item; }

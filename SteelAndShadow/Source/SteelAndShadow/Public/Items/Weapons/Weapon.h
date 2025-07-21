@@ -11,6 +11,7 @@ class STEELANDSHADOW_API AWeapon : public AItem
 
 public:
 	void Equip(USceneComponent* InParent, FName InSocketName);
+	void AttachMeshToSocket(USceneComponent* InParent, const FName& InSocketName);
 
 protected:
 	virtual void OnSphereOverlap
@@ -30,4 +31,8 @@ protected:
 		UPrimitiveComponent* OtherComp,
 		int32 OtherBodyIndex
 	) override;
+
+private:
+	UPROPERTY(EditAnywhere, Category = "Weapon Properties")
+	class USoundBase* EquipSound;
 };

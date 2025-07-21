@@ -14,6 +14,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define STEELANDSHADOW_SlashCharacter_generated_h
 
+#define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execFinishEquipping); \
+	DECLARE_FUNCTION(execDisarm); \
+	DECLARE_FUNCTION(execArm); \
+	DECLARE_FUNCTION(execAttackEnd);
+
+
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_11_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASlashCharacter(); \
@@ -39,6 +46,7 @@ public: \
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_11_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_11_INCLASS_NO_PURE_DECLS \
 	FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_11_ENHANCED_CONSTRUCTORS \
 private: \
