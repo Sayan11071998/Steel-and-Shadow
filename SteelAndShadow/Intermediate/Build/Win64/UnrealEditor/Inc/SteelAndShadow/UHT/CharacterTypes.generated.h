@@ -30,7 +30,8 @@ template<> STEELANDSHADOW_API UEnum* StaticEnum<ECharacterState>();
 
 #define FOREACH_ENUM_EACTIONSTATE(op) \
 	op(EActionState::EAS_Unoccupied) \
-	op(EActionState::EAS_Attaking) 
+	op(EActionState::EAS_Attaking) \
+	op(EActionState::EAS_EquippingWeapon) 
 
 enum class EActionState : uint8;
 template<> struct TIsUEnumClass<EActionState> { enum { Value = true }; };
