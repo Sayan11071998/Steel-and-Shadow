@@ -31,4 +31,8 @@ protected:
 		UPrimitiveComponent* OtherComp,
 		int32 OtherBodyIndex
 	) override;
+
+private:
+	UPROPERTY(EditAnywhere, Category = "Weapon Properties")
+	class USoundBase* EquipSound;
 };
