@@ -10,6 +10,8 @@ class STEELANDSHADOW_API AWeapon : public AItem
 	GENERATED_BODY()
 
 public:
+	AWeapon();
+
 	void Equip(USceneComponent* InParent, FName InSocketName);
 	void AttachMeshToSocket(USceneComponent* InParent, const FName& InSocketName);
 
@@ -35,4 +37,7 @@ protected:
 private:
 	UPROPERTY(EditAnywhere, Category = "Weapon Properties")
 	class USoundBase* EquipSound;
+
+	UPROPERTY(VisibleAnywhere, Category = "Weapon Properties")
+	class UBoxComponent* WeaponBox;
 };

@@ -24,8 +24,6 @@ public: \
 
 
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Items_Weapons_Weapon_h_10_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AWeapon(); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AWeapon(AWeapon&&); \
