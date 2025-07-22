@@ -223,7 +223,11 @@
             "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\source\\steelandshadow\\public\\items\\item.h",
             "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\item.generated.h",
             "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\source\\steelandshadow\\public\\items\\weapons\\weapon.h",
-            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\weapon.generated.h"
+            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\weapon.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
