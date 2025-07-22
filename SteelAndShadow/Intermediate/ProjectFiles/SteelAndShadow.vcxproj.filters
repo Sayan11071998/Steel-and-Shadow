@@ -55,6 +55,12 @@
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Characters\SlashCharacter.cpp">
       <Filter>Source\SteelAndShadow\Private\Characters</Filter>
     </ClCompile>
+    <Filter Include="Source\SteelAndShadow\Private\Interfaces">
+      <UniqueIdentifier>{0932C083-1486-3759-B6DB-EC9F3EA56F96}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Interfaces\HitInterface.cpp">
+      <Filter>Source\SteelAndShadow\Private\Interfaces</Filter>
+    </ClCompile>
     <Filter Include="Source\SteelAndShadow\Private\Items">
       <UniqueIdentifier>{6A600208-1427-38C0-9E11-A5BE93A28B47}</UniqueIdentifier>
     </Filter>
@@ -79,11 +85,20 @@
     <Filter Include="Source\SteelAndShadow\Public\Characters">
       <UniqueIdentifier>{10AE598B-A47D-3D5D-A091-B4E374616BE8}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\CharacterTypes.h">
+      <Filter>Source\SteelAndShadow\Public\Characters</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\SlashAnimInstance.h">
       <Filter>Source\SteelAndShadow\Public\Characters</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\SlashCharacter.h">
       <Filter>Source\SteelAndShadow\Public\Characters</Filter>
+    </ClInclude>
+    <Filter Include="Source\SteelAndShadow\Public\Interfaces">
+      <UniqueIdentifier>{C7A18858-5AB2-38EC-89BB-2DFA05E86976}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Interfaces\HitInterface.h">
+      <Filter>Source\SteelAndShadow\Public\Interfaces</Filter>
     </ClInclude>
     <Filter Include="Source\SteelAndShadow\Public\Items">
       <UniqueIdentifier>{D59A3E0D-F2D9-34EA-B33F-6750027E91A5}</UniqueIdentifier>
@@ -102,11 +117,6 @@
     </Filter>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Pawns\Bird.h">
       <Filter>Source\SteelAndShadow\Public\Pawns</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\CharacterTypes.h">
-      <Filter>Source\SteelAndShadow\Public\Characters</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
