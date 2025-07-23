@@ -270,6 +270,9 @@
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Characters\SlashCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Enemy\Enemy.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Interfaces\HitInterface.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -285,6 +288,7 @@
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\CharacterTypes.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\SlashAnimInstance.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\SlashCharacter.h"/>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Enemy\Enemy.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Interfaces\HitInterface.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Item.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Weapons\Weapon.h"/>

@@ -55,6 +55,12 @@
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Characters\SlashCharacter.cpp">
       <Filter>Source\SteelAndShadow\Private\Characters</Filter>
     </ClCompile>
+    <Filter Include="Source\SteelAndShadow\Private\Enemy">
+      <UniqueIdentifier>{0C0D679B-D49B-32BC-9F3E-D33A5C381A0D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Enemy\Enemy.cpp">
+      <Filter>Source\SteelAndShadow\Private\Enemy</Filter>
+    </ClCompile>
     <Filter Include="Source\SteelAndShadow\Private\Interfaces">
       <UniqueIdentifier>{0932C083-1486-3759-B6DB-EC9F3EA56F96}</UniqueIdentifier>
     </Filter>
@@ -93,6 +99,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\SlashCharacter.h">
       <Filter>Source\SteelAndShadow\Public\Characters</Filter>
+    </ClInclude>
+    <Filter Include="Source\SteelAndShadow\Public\Enemy">
+      <UniqueIdentifier>{9DEC16FE-5055-3B49-A8BD-10268553527E}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Enemy\Enemy.h">
+      <Filter>Source\SteelAndShadow\Public\Enemy</Filter>
     </ClInclude>
     <Filter Include="Source\SteelAndShadow\Public\Interfaces">
       <UniqueIdentifier>{C7A18858-5AB2-38EC-89BB-2DFA05E86976}</UniqueIdentifier>
