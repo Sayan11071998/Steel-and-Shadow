@@ -29,7 +29,7 @@ protected:
 	void Attack();
 
 	void PlayAttackMontage();
-	void PlayEquipMontage(FName SectionName);
+	void PlayEquipMontage(const FName& SectionName);
 
 	bool CanAttack();
 	bool CanDisarm();
