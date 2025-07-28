@@ -16,7 +16,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	virtual void GetHit(const FVector& Impactpoint) override;
+	virtual void GetHit(const FVector& ImpactPoint) override;
 
 protected:
 	virtual void BeginPlay() override;
