@@ -18,7 +18,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execFinishEquipping); \
 	DECLARE_FUNCTION(execDisarm); \
 	DECLARE_FUNCTION(execArm); \
-	DECLARE_FUNCTION(execAttackEnd);
+	DECLARE_FUNCTION(execAttackEnd); \
+	DECLARE_FUNCTION(execSetWeaponCollisionEnabled);
 
 
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_11_INCLASS_NO_PURE_DECLS \
