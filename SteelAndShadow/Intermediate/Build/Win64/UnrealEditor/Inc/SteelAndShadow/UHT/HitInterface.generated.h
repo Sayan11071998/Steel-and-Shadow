@@ -14,6 +14,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define STEELANDSHADOW_HitInterface_generated_h
 
+#define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Interfaces_HitInterface_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void GetHit_Implementation(FVector const& Impactpoint) {}; \
+	DECLARE_FUNCTION(execGetHit);
+
+
+#define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Interfaces_HitInterface_h_10_CALLBACK_WRAPPERS
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Interfaces_HitInterface_h_10_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	STEELANDSHADOW_API UHitInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
@@ -51,6 +57,7 @@ protected: \
 public: \
 	typedef UHitInterface UClassType; \
 	typedef IHitInterface ThisClass; \
+	static void Execute_GetHit(UObject* O, FVector const& Impactpoint); \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
@@ -58,6 +65,8 @@ public: \
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Interfaces_HitInterface_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Interfaces_HitInterface_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Interfaces_HitInterface_h_10_CALLBACK_WRAPPERS \
 	FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Interfaces_HitInterface_h_10_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
