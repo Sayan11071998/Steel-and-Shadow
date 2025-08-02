@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SteelAndShadowModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73c452adeaa0528d9dd201674fe12623e5735ff5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5917465ce5b29e2712f2d3bbb55d117513c7ed8")]
 [assembly: System.Reflection.AssemblyProductAttribute("SteelAndShadowModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SteelAndShadowModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
