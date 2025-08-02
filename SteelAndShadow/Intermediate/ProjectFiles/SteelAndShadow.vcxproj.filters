@@ -12,6 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.vsconfig" />
+    <None Include="..\..\AncientTreasures.png" />
     <None Include="..\..\SteelAndShadow.png" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -79,6 +80,9 @@
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Item.cpp">
       <Filter>Source\SteelAndShadow\Private\Items</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Treasure.cpp">
+      <Filter>Source\SteelAndShadow\Private\Items</Filter>
+    </ClCompile>
     <Filter Include="Source\SteelAndShadow\Private\Items\Weapons">
       <UniqueIdentifier>{115583C3-4C46-35BC-8651-83466BD0C3CC}</UniqueIdentifier>
     </Filter>
@@ -94,12 +98,6 @@
     <Filter Include="Source\SteelAndShadow\Public">
       <UniqueIdentifier>{7DF697B8-6001-36B9-8915-70079C7CC0DF}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\SteelAndShadow\Public\Breakable">
-      <UniqueIdentifier>{BBE91C64-F0E4-358B-AC26-7E29C88AB135}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Breakable\BreakableActor.h">
-      <Filter>Source\SteelAndShadow\Public\Breakable</Filter>
-    </ClInclude>
     <Filter Include="Source\SteelAndShadow\Public\Characters">
       <UniqueIdentifier>{10AE598B-A47D-3D5D-A091-B4E374616BE8}</UniqueIdentifier>
     </Filter>
@@ -130,11 +128,17 @@
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Item.h">
       <Filter>Source\SteelAndShadow\Public\Items</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Treasure.h">
+      <Filter>Source\SteelAndShadow\Public\Items</Filter>
+    </ClInclude>
     <Filter Include="Source\SteelAndShadow\Public\Items\Weapons">
       <UniqueIdentifier>{65750184-60E4-3AD1-A3E8-2B1B26E7E851}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Weapons\Weapon.h">
       <Filter>Source\SteelAndShadow\Public\Items\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\New folder\BreakableActor.h">
+      <Filter>Source\SteelAndShadow\Public\Breakable</Filter>
     </ClInclude>
     <Filter Include="Source\SteelAndShadow\Public\Pawns">
       <UniqueIdentifier>{A6DB40D1-4FA1-3FBD-8FF0-234430A73BBD}</UniqueIdentifier>
@@ -142,5 +146,10 @@
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Pawns\Bird.h">
       <Filter>Source\SteelAndShadow\Public\Pawns</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source\SteelAndShadow\Public\Breakable">
+      <UniqueIdentifier>{CF028D05-C6D4-3391-AB80-7F1BEEE3C21B}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
