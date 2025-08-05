@@ -34,6 +34,9 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	class USphereComponent* SphereComponent;
 
+	UPROPERTY(EditAnywhere)
+	class UNiagaraComponent* EmbersEffect;
+
 	UFUNCTION(BlueprintPure)
 	float TransformedSin();
 
