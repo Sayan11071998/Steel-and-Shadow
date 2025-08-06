@@ -77,6 +77,9 @@
     <Filter Include="Source\SteelAndShadow\Private\HUD">
       <UniqueIdentifier>{0424EF2E-0612-3A7D-9B0E-A298D40A9801}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\HUD\HealthBar.cpp">
+      <Filter>Source\SteelAndShadow\Private\HUD</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\HUD\HealthBarComponent.cpp">
       <Filter>Source\SteelAndShadow\Private\HUD</Filter>
     </ClCompile>
@@ -143,6 +146,9 @@
     <Filter Include="Source\SteelAndShadow\Public\HUD">
       <UniqueIdentifier>{548E5512-20FA-39DC-9782-B1CE19BD9649}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\HUD\HealthBar.h">
+      <Filter>Source\SteelAndShadow\Public\HUD</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\HUD\HealthBarComponent.h">
       <Filter>Source\SteelAndShadow\Public\HUD</Filter>
     </ClInclude>
