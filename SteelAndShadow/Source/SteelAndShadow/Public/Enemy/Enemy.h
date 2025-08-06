@@ -29,7 +29,7 @@ private:
  	class UAttributeComponent* Attributes;
 
 	UPROPERTY(VisibleAnywhere)
-	class UWidgetComponent* HealthBarWidget;
+	class UHealthBarComponent* HealthBarWidget;
 
 	UPROPERTY(EditDefaultsOnly, Category = Montages)
 	class UAnimMontage* HitReactMontage;

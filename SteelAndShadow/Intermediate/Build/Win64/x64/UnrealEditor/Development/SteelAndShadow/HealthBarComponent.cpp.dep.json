@@ -37,7 +37,13 @@
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetanimationevents.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\userwidget.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetcomponent.generated.h",
-            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\healthbarcomponent.generated.h"
+            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\healthbarcomponent.generated.h",
+            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\source\\steelandshadow\\public\\hud\\healthbar.h",
+            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\healthbar.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\umg\\public\\components\\progressbar.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\slate\\public\\widgets\\notifications\\sprogressbar.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\slate\\uht\\sprogressbar.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\progressbar.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
