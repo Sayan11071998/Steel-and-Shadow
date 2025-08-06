@@ -25,6 +25,9 @@ protected:
 	void PlayHitReactMontage(const FName& SectionName);
 
 private:
+	UPROPERTY(VisibleAnywhere)
+ 	class UAttributeComponent* Attributes;
+
 	UPROPERTY(EditDefaultsOnly, Category = Montages)
 	class UAnimMontage* HitReactMontage;
 
