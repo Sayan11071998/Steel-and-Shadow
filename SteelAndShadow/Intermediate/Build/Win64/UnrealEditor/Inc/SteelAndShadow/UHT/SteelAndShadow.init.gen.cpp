@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeSteelAndShadow_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xF366BFFC,
+				0x0707413A,
 				0xA9BFDB46,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeSteelAndShadow_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_SteelAndShadow.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_SteelAndShadow(Z_Construct_UPackage__Script_SteelAndShadow, TEXT("/Script/SteelAndShadow"), Z_Registration_Info_UPackage__Script_SteelAndShadow, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xF366BFFC, 0xA9BFDB46));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_SteelAndShadow(Z_Construct_UPackage__Script_SteelAndShadow, TEXT("/Script/SteelAndShadow"), Z_Registration_Info_UPackage__Script_SteelAndShadow, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x0707413A, 0xA9BFDB46));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
