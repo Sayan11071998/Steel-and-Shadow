@@ -3,6 +3,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Interfaces/HitInterface.h"
+#include "Characters/CharacterTypes.h"
 #include "Enemy.generated.h"
 
 UCLASS()
@@ -18,19 +19,39 @@ public:
 
 	virtual void GetHit_Implementation(const FVector& ImpactPoint) override;
 	void DirectionHitReact(const FVector& ImpactPoint);
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
 protected:
 	virtual void BeginPlay() override;
 
+	void Die();
 	void PlayHitReactMontage(const FName& SectionName);
 
+	UPROPERTY(BlueprintReadOnly)
+	EDeathPose DeathPose = EDeathPose::EDP_Alive;
+
 private:
+	UPROPERTY(VisibleAnywhere)
+ 	class UAttributeComponent* Attributes;
+
+	UPROPERTY(VisibleAnywhere)
+	class UHealthBarComponent* HealthBarWidget;
+
 	UPROPERTY(EditDefaultsOnly, Category = Montages)
 	class UAnimMontage* HitReactMontage;
+
+	UPROPERTY(EditDefaultsOnly, Category = Montages)
+	class UAnimMontage* DeathMontage;
 
 	UPROPERTY(EditAnywhere, Category = Sounds)
 	USoundBase* HitSound;
 
 	UPROPERTY(EditAnywhere, Category = VisualEffects)
 	UParticleSystem* HitParticles;
+
+	UPROPERTY()
+	AActor* CombatTarget;
+
+	UPROPERTY(EditAnywhere)
+	double CombatRadius = 500.f;
 };

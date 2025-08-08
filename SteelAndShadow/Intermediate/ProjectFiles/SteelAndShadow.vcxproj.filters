@@ -62,11 +62,26 @@
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Characters\SlashCharacter.cpp">
       <Filter>Source\SteelAndShadow\Private\Characters</Filter>
     </ClCompile>
+    <Filter Include="Source\SteelAndShadow\Private\Components">
+      <UniqueIdentifier>{D5C779AF-C0A3-3DE8-B191-431BC65E9CF8}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Components\AttributeComponent.cpp">
+      <Filter>Source\SteelAndShadow\Private\Components</Filter>
+    </ClCompile>
     <Filter Include="Source\SteelAndShadow\Private\Enemy">
       <UniqueIdentifier>{0C0D679B-D49B-32BC-9F3E-D33A5C381A0D}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Enemy\Enemy.cpp">
       <Filter>Source\SteelAndShadow\Private\Enemy</Filter>
+    </ClCompile>
+    <Filter Include="Source\SteelAndShadow\Private\HUD">
+      <UniqueIdentifier>{0424EF2E-0612-3A7D-9B0E-A298D40A9801}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\HUD\HealthBar.cpp">
+      <Filter>Source\SteelAndShadow\Private\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\HUD\HealthBarComponent.cpp">
+      <Filter>Source\SteelAndShadow\Private\HUD</Filter>
     </ClCompile>
     <Filter Include="Source\SteelAndShadow\Private\Interfaces">
       <UniqueIdentifier>{0932C083-1486-3759-B6DB-EC9F3EA56F96}</UniqueIdentifier>
@@ -98,6 +113,12 @@
     <Filter Include="Source\SteelAndShadow\Public">
       <UniqueIdentifier>{7DF697B8-6001-36B9-8915-70079C7CC0DF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\SteelAndShadow\Public\Breakable">
+      <UniqueIdentifier>{BBE91C64-F0E4-358B-AC26-7E29C88AB135}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Breakable\BreakableActor.h">
+      <Filter>Source\SteelAndShadow\Public\Breakable</Filter>
+    </ClInclude>
     <Filter Include="Source\SteelAndShadow\Public\Characters">
       <UniqueIdentifier>{10AE598B-A47D-3D5D-A091-B4E374616BE8}</UniqueIdentifier>
     </Filter>
@@ -110,11 +131,26 @@
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\SlashCharacter.h">
       <Filter>Source\SteelAndShadow\Public\Characters</Filter>
     </ClInclude>
+    <Filter Include="Source\SteelAndShadow\Public\Components">
+      <UniqueIdentifier>{DFC87384-0602-3CB3-A9FE-0596BA72406F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Components\AttributeComponent.h">
+      <Filter>Source\SteelAndShadow\Public\Components</Filter>
+    </ClInclude>
     <Filter Include="Source\SteelAndShadow\Public\Enemy">
       <UniqueIdentifier>{9DEC16FE-5055-3B49-A8BD-10268553527E}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Enemy\Enemy.h">
       <Filter>Source\SteelAndShadow\Public\Enemy</Filter>
+    </ClInclude>
+    <Filter Include="Source\SteelAndShadow\Public\HUD">
+      <UniqueIdentifier>{548E5512-20FA-39DC-9782-B1CE19BD9649}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\HUD\HealthBar.h">
+      <Filter>Source\SteelAndShadow\Public\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\HUD\HealthBarComponent.h">
+      <Filter>Source\SteelAndShadow\Public\HUD</Filter>
     </ClInclude>
     <Filter Include="Source\SteelAndShadow\Public\Interfaces">
       <UniqueIdentifier>{C7A18858-5AB2-38EC-89BB-2DFA05E86976}</UniqueIdentifier>
@@ -137,19 +173,11 @@
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Weapons\Weapon.h">
       <Filter>Source\SteelAndShadow\Public\Items\Weapons</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\SteelAndShadow\Public\New folder\BreakableActor.h">
-      <Filter>Source\SteelAndShadow\Public\Breakable</Filter>
-    </ClInclude>
     <Filter Include="Source\SteelAndShadow\Public\Pawns">
       <UniqueIdentifier>{A6DB40D1-4FA1-3FBD-8FF0-234430A73BBD}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Pawns\Bird.h">
       <Filter>Source\SteelAndShadow\Public\Pawns</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="Source\SteelAndShadow\Public\Breakable">
-      <UniqueIdentifier>{CF028D05-C6D4-3391-AB80-7F1BEEE3C21B}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
 </Project>

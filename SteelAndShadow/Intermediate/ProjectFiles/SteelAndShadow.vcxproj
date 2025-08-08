@@ -274,7 +274,16 @@
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Characters\SlashCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Components\AttributeComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Enemy\Enemy.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\HUD\HealthBar.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\HUD\HealthBarComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Interfaces\HitInterface.cpp">
@@ -292,15 +301,18 @@
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Pawns\Bird.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Breakable\BreakableActor.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\CharacterTypes.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\SlashAnimInstance.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\SlashCharacter.h"/>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Components\AttributeComponent.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Enemy\Enemy.h"/>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\HUD\HealthBar.h"/>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\HUD\HealthBarComponent.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Interfaces\HitInterface.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Item.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Treasure.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Weapons\Weapon.h"/>
-    <ClInclude Include="..\..\Source\SteelAndShadow\Public\New folder\BreakableActor.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Pawns\Bird.h"/>
   </ItemGroup>
   <PropertyGroup>
