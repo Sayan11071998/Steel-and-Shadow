@@ -10,6 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeEnemy() {}
 
 // Begin Cross Module References
+AIMODULE_API UClass* Z_Construct_UClass_AAIController_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
@@ -78,6 +79,17 @@ struct Z_Construct_UClass_AEnemy_Statics
 		{ "Category", "Enemy" },
 		{ "ModuleRelativePath", "Public/Enemy/Enemy.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnemyController_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Enemy/Enemy.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PatrolTarget_MetaData[] = {
+		{ "Category", "AI Navigation" },
+		{ "ModuleRelativePath", "Public/Enemy/Enemy.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PatrolTargets_MetaData[] = {
+		{ "Category", "AI Navigation" },
+		{ "ModuleRelativePath", "Public/Enemy/Enemy.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_DeathPose_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_DeathPose;
@@ -89,6 +101,10 @@ struct Z_Construct_UClass_AEnemy_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HitParticles;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CombatTarget;
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_CombatRadius;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_EnemyController;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_PatrolTarget;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_PatrolTargets_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_PatrolTargets;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -107,6 +123,10 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Statics
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_HitParticles = { "HitParticles", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, HitParticles), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HitParticles_MetaData), NewProp_HitParticles_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_CombatTarget = { "CombatTarget", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, CombatTarget), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CombatTarget_MetaData), NewProp_CombatTarget_MetaData) };
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_CombatRadius = { "CombatRadius", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, CombatRadius), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CombatRadius_MetaData), NewProp_CombatRadius_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_EnemyController = { "EnemyController", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, EnemyController), Z_Construct_UClass_AAIController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnemyController_MetaData), NewProp_EnemyController_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_PatrolTarget = { "PatrolTarget", nullptr, (EPropertyFlags)0x0040000000000801, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, PatrolTarget), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PatrolTarget_MetaData), NewProp_PatrolTarget_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_PatrolTargets_Inner = { "PatrolTargets", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_PatrolTargets = { "PatrolTargets", nullptr, (EPropertyFlags)0x0040000000000801, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, PatrolTargets), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PatrolTargets_MetaData), NewProp_PatrolTargets_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemy_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_DeathPose_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_DeathPose,
@@ -118,6 +138,10 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemy_St
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_HitParticles,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_CombatTarget,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_CombatRadius,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_EnemyController,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_PatrolTarget,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_PatrolTargets_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_PatrolTargets,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AEnemy_Statics::DependentSingletons[])() = {
@@ -163,10 +187,10 @@ AEnemy::~AEnemy() {}
 struct Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AEnemy, AEnemy::StaticClass, TEXT("AEnemy"), &Z_Registration_Info_UClass_AEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemy), 3476791391U) },
+		{ Z_Construct_UClass_AEnemy, AEnemy::StaticClass, TEXT("AEnemy"), &Z_Registration_Info_UClass_AEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemy), 3443593685U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_1683961617(TEXT("/Script/SteelAndShadow"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_2188146035(TEXT("/Script/SteelAndShadow"),
 	Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
