@@ -25,7 +25,11 @@ protected:
 	virtual void BeginPlay() override;
 
 	void Die();
+	void CheckPatrolTarget();
+	void CheckCombatTarget();
 	bool InTargetRange(AActor* Target, double Radius);
+	void MoveToTarget(AActor* Target);
+	AActor* ChoosePatrolTarget();
 	void PlayHitReactMontage(const FName& SectionName);
 
 	UPROPERTY(BlueprintReadOnly)
@@ -67,4 +71,14 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	double PatrolRadius = 200.f;
+
+	FTimerHandle PatrolTimer;
+
+	void PatrolTimerFinished();
+
+	UPROPERTY(EditAnywhere, Category = "AI Navigation")
+	float WaitMin = 5.f;
+
+	UPROPERTY(EditAnywhere, Category = "AI Navigation")
+	float WaitMax = 10.f;
 };
