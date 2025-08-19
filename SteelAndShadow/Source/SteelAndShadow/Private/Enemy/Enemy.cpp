@@ -142,6 +142,9 @@ void AEnemy::CheckCombatTarget()
 		{
 			HealthBarWidget->SetVisibility(false);
 		}
+		EnemyState = EEnemyState::EES_Patrolling;
+		GetCharacterMovement()->MaxWalkSpeed = 125.f;
+		MoveToTarget(PatrolTarget);
 	}
 }
 
@@ -206,7 +209,6 @@ void AEnemy::PawnSeen(APawn* SeenPawn)
 		GetCharacterMovement()->MaxWalkSpeed = 300.f;
 		CombatTarget = SeenPawn;
 		MoveToTarget(CombatTarget);
-		UE_LOG(LogTemp, Warning, TEXT("Seen Pawn, now Chasing"));
 	}
 }
 
