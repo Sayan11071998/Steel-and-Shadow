@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacterTypes() {}
 STEELANDSHADOW_API UEnum* Z_Construct_UEnum_SteelAndShadow_EActionState();
 STEELANDSHADOW_API UEnum* Z_Construct_UEnum_SteelAndShadow_ECharacterState();
 STEELANDSHADOW_API UEnum* Z_Construct_UEnum_SteelAndShadow_EDeathPose();
+STEELANDSHADOW_API UEnum* Z_Construct_UEnum_SteelAndShadow_EEnemyState();
 UPackage* Z_Construct_UPackage__Script_SteelAndShadow();
 // End Cross Module References
 
@@ -199,6 +200,63 @@ UEnum* Z_Construct_UEnum_SteelAndShadow_EDeathPose()
 }
 // End Enum EDeathPose
 
+// Begin Enum EEnemyState
+static FEnumRegistrationInfo Z_Registration_Info_UEnum_EEnemyState;
+static UEnum* EEnemyState_StaticEnum()
+{
+	if (!Z_Registration_Info_UEnum_EEnemyState.OuterSingleton)
+	{
+		Z_Registration_Info_UEnum_EEnemyState.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_SteelAndShadow_EEnemyState, (UObject*)Z_Construct_UPackage__Script_SteelAndShadow(), TEXT("EEnemyState"));
+	}
+	return Z_Registration_Info_UEnum_EEnemyState.OuterSingleton;
+}
+template<> STEELANDSHADOW_API UEnum* StaticEnum<EEnemyState>()
+{
+	return EEnemyState_StaticEnum();
+}
+struct Z_Construct_UEnum_SteelAndShadow_EEnemyState_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "EES_Attacking.DisplayName", "Attacking" },
+		{ "EES_Attacking.Name", "EEnemyState::EES_Attacking" },
+		{ "EES_Chasing.DisplayName", "Chasing" },
+		{ "EES_Chasing.Name", "EEnemyState::EES_Chasing" },
+		{ "EES_Patrolling.DisplayName", "Patrolling" },
+		{ "EES_Patrolling.Name", "EEnemyState::EES_Patrolling" },
+		{ "ModuleRelativePath", "Public/Characters/CharacterTypes.h" },
+	};
+#endif // WITH_METADATA
+	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
+		{ "EEnemyState::EES_Patrolling", (int64)EEnemyState::EES_Patrolling },
+		{ "EEnemyState::EES_Chasing", (int64)EEnemyState::EES_Chasing },
+		{ "EEnemyState::EES_Attacking", (int64)EEnemyState::EES_Attacking },
+	};
+	static const UECodeGen_Private::FEnumParams EnumParams;
+};
+const UECodeGen_Private::FEnumParams Z_Construct_UEnum_SteelAndShadow_EEnemyState_Statics::EnumParams = {
+	(UObject*(*)())Z_Construct_UPackage__Script_SteelAndShadow,
+	nullptr,
+	"EEnemyState",
+	"EEnemyState",
+	Z_Construct_UEnum_SteelAndShadow_EEnemyState_Statics::Enumerators,
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	UE_ARRAY_COUNT(Z_Construct_UEnum_SteelAndShadow_EEnemyState_Statics::Enumerators),
+	EEnumFlags::None,
+	(uint8)UEnum::ECppForm::EnumClass,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_SteelAndShadow_EEnemyState_Statics::Enum_MetaDataParams), Z_Construct_UEnum_SteelAndShadow_EEnemyState_Statics::Enum_MetaDataParams)
+};
+UEnum* Z_Construct_UEnum_SteelAndShadow_EEnemyState()
+{
+	if (!Z_Registration_Info_UEnum_EEnemyState.InnerSingleton)
+	{
+		UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_EEnemyState.InnerSingleton, Z_Construct_UEnum_SteelAndShadow_EEnemyState_Statics::EnumParams);
+	}
+	return Z_Registration_Info_UEnum_EEnemyState.InnerSingleton;
+}
+// End Enum EEnemyState
+
 // Begin Registration
 struct Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_CharacterTypes_h_Statics
 {
@@ -206,9 +264,10 @@ struct Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndS
 		{ ECharacterState_StaticEnum, TEXT("ECharacterState"), &Z_Registration_Info_UEnum_ECharacterState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 223662205U) },
 		{ EActionState_StaticEnum, TEXT("EActionState"), &Z_Registration_Info_UEnum_EActionState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1603962153U) },
 		{ EDeathPose_StaticEnum, TEXT("EDeathPose"), &Z_Registration_Info_UEnum_EDeathPose, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 559429626U) },
+		{ EEnemyState_StaticEnum, TEXT("EEnemyState"), &Z_Registration_Info_UEnum_EEnemyState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1031351810U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_CharacterTypes_h_3991587490(TEXT("/Script/SteelAndShadow"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_CharacterTypes_h_3490271867(TEXT("/Script/SteelAndShadow"),
 	nullptr, 0,
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_CharacterTypes_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_CharacterTypes_h_Statics::EnumInfo));
