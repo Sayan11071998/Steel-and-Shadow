@@ -82,6 +82,9 @@ private:
 
 	void PatrolTimerFinished();
 
+	UPROPERTY(EditAnywhere)
+	double AttackRadius = 150.f;
+
 	UPROPERTY(EditAnywhere, Category = "AI Navigation")
 	float WaitMin = 5.f;
 
