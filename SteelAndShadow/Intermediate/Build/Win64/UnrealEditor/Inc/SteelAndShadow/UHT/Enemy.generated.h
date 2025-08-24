@@ -9,10 +9,15 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class APawn;
 #ifdef STEELANDSHADOW_Enemy_generated_h
 #error "Enemy.generated.h already included, missing '#pragma once' in Enemy.h"
 #endif
 #define STEELANDSHADOW_Enemy_generated_h
+
+#define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execPawnSeen);
+
 
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_12_INCLASS_NO_PURE_DECLS \
 private: \
@@ -40,6 +45,7 @@ public: \
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_12_INCLASS_NO_PURE_DECLS \
 	FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_12_ENHANCED_CONSTRUCTORS \
 private: \
