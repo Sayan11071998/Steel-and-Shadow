@@ -24,9 +24,8 @@ private: \
 	static void StaticRegisterNativesAEnemy(); \
 	friend struct Z_Construct_UClass_AEnemy_Statics; \
 public: \
-	DECLARE_CLASS(AEnemy, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/SteelAndShadow"), NO_API) \
-	DECLARE_SERIALIZER(AEnemy) \
-	virtual UObject* _getUObject() const override { return const_cast<AEnemy*>(this); }
+	DECLARE_CLASS(AEnemy, ABaseCharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/SteelAndShadow"), NO_API) \
+	DECLARE_SERIALIZER(AEnemy)
 
 
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_12_ENHANCED_CONSTRUCTORS \

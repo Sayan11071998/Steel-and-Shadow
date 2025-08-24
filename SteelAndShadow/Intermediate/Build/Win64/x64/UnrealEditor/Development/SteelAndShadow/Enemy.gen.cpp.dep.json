@@ -7,6 +7,7 @@
         "Includes": [
             "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\steelandshadow\\definitions.steelandshadow.h",
             "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\source\\steelandshadow\\public\\enemy\\enemy.h",
+            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\source\\steelandshadow\\public\\characters\\basecharacter.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
@@ -17,6 +18,7 @@
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
             "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\source\\steelandshadow\\public\\interfaces\\hitinterface.h",
             "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\hitinterface.generated.h",
+            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\basecharacter.generated.h",
             "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\source\\steelandshadow\\public\\characters\\charactertypes.h",
             "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\enemy.generated.h"
         ],

@@ -1,12 +1,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "BaseCharacter.h"
 #include "CharacterTypes.h"
 #include "SlashCharacter.generated.h"
 
 UCLASS()
-class STEELANDSHADOW_API ASlashCharacter : public ACharacter
+class STEELANDSHADOW_API ASlashCharacter : public ABaseCharacter
 {
 	GENERATED_BODY()
 
@@ -14,9 +14,6 @@ public:
 	ASlashCharacter();
 	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	UFUNCTION(BlueprintCallable)
-	void SetWeaponCollisionEnabled(ECollisionEnabled::Type CollisionEnabled);
 
 protected:
 	virtual void BeginPlay() override;
@@ -26,17 +23,16 @@ protected:
 	void Turn(float Value);
 	void LookUp(float Value);
 	void EKeyPressed();
-	void Attack();
+	virtual void Attack() override;
 
-	void PlayAttackMontage();
+	virtual void PlayAttackMontage() override;
 	void PlayEquipMontage(const FName& SectionName);
 
-	bool CanAttack();
+	virtual bool CanAttack() override;
 	bool CanDisarm();
 	bool CanArm();
 
-	UFUNCTION(BlueprintCallable)
-	void AttackEnd();
+	virtual void AttackEnd() override;
 
 	UFUNCTION(BlueprintCallable)
 	void Arm();
@@ -69,13 +65,7 @@ private:
 	class AItem* OverlappingItem;
 
 	UPROPERTY(EditDefaultsOnly, Category = Montages)
-	class UAnimMontage* AttackMontage;
-
-	UPROPERTY(EditDefaultsOnly, Category = Montages)
 	class UAnimMontage* EquipMontage;
-
-	UPROPERTY(VisibleAnywhere, Category = Weapon)
-	class AWeapon* EquippedWeapon;
 
 public:
 	FORCEINLINE void SetOverlappingItem(class AItem* Item) { OverlappingItem = Item; }

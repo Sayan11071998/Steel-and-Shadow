@@ -1,13 +1,13 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "Characters/BaseCharacter.h"
 #include "Interfaces/HitInterface.h"
 #include "Characters/CharacterTypes.h"
 #include "Enemy.generated.h"
 
 UCLASS()
-class STEELANDSHADOW_API AEnemy : public ACharacter, public IHitInterface
+class STEELANDSHADOW_API AEnemy : public ABaseCharacter
 {
 	GENERATED_BODY()
 
@@ -18,19 +18,17 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	virtual void GetHit_Implementation(const FVector& ImpactPoint) override;
-	void DirectionHitReact(const FVector& ImpactPoint);
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
 protected:
 	virtual void BeginPlay() override;
 
-	void Die();
+	virtual void Die() override;
 	void CheckPatrolTarget();
 	void CheckCombatTarget();
 	bool InTargetRange(AActor* Target, double Radius);
 	void MoveToTarget(AActor* Target);
 	AActor* ChoosePatrolTarget();
-	void PlayHitReactMontage(const FName& SectionName);
 	
 	UFUNCTION()
 	void PawnSeen(APawn* SeenPawn);
@@ -40,25 +38,10 @@ protected:
 
 private:
 	UPROPERTY(VisibleAnywhere)
- 	class UAttributeComponent* Attributes;
-
-	UPROPERTY(VisibleAnywhere)
 	class UHealthBarComponent* HealthBarWidget;
 
 	UPROPERTY(VisibleAnywhere)
 	class UPawnSensingComponent* PawnSensing;
-
-	UPROPERTY(EditDefaultsOnly, Category = Montages)
-	class UAnimMontage* HitReactMontage;
-
-	UPROPERTY(EditDefaultsOnly, Category = Montages)
-	class UAnimMontage* DeathMontage;
-
-	UPROPERTY(EditAnywhere, Category = Sounds)
-	USoundBase* HitSound;
-
-	UPROPERTY(EditAnywhere, Category = VisualEffects)
-	UParticleSystem* HitParticles;
 
 	UPROPERTY()
 	AActor* CombatTarget;

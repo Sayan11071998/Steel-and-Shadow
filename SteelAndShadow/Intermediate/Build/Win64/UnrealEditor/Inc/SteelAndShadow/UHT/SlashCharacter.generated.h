@@ -17,9 +17,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execFinishEquipping); \
 	DECLARE_FUNCTION(execDisarm); \
-	DECLARE_FUNCTION(execArm); \
-	DECLARE_FUNCTION(execAttackEnd); \
-	DECLARE_FUNCTION(execSetWeaponCollisionEnabled);
+	DECLARE_FUNCTION(execArm);
 
 
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_11_INCLASS_NO_PURE_DECLS \
@@ -27,7 +25,7 @@ private: \
 	static void StaticRegisterNativesASlashCharacter(); \
 	friend struct Z_Construct_UClass_ASlashCharacter_Statics; \
 public: \
-	DECLARE_CLASS(ASlashCharacter, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/SteelAndShadow"), NO_API) \
+	DECLARE_CLASS(ASlashCharacter, ABaseCharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/SteelAndShadow"), NO_API) \
 	DECLARE_SERIALIZER(ASlashCharacter)
 
 
