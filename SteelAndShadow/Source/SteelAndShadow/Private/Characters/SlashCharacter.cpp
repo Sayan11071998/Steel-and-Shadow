@@ -126,6 +126,8 @@ void ASlashCharacter::EKeyPressed()
 
 void ASlashCharacter::Attack()
 {
+	Super::Attack();
+
 	if (CanAttack())
 	{
 		PlayAttackMontage();
@@ -150,6 +152,8 @@ bool ASlashCharacter::CanArm()
 
 void ASlashCharacter::PlayAttackMontage()
 {
+	Super::PlayAttackMontage();
+
 	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 	if (AnimInstance && AttackMontage)
 	{
