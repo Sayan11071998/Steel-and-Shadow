@@ -38,7 +38,6 @@ template<> struct TIsUEnumClass<EActionState> { enum { Value = true }; };
 template<> STEELANDSHADOW_API UEnum* StaticEnum<EActionState>();
 
 #define FOREACH_ENUM_EDEATHPOSE(op) \
-	op(EDeathPose::EDP_Alive) \
 	op(EDeathPose::EDP_Death1) \
 	op(EDeathPose::EDP_Death2) \
 	op(EDeathPose::EDP_Death3) \
@@ -51,9 +50,11 @@ template<> struct TIsUEnumClass<EDeathPose> { enum { Value = true }; };
 template<> STEELANDSHADOW_API UEnum* StaticEnum<EDeathPose>();
 
 #define FOREACH_ENUM_EENEMYSTATE(op) \
+	op(EEnemyState::EES_Dead) \
 	op(EEnemyState::EES_Patrolling) \
 	op(EEnemyState::EES_Chasing) \
-	op(EEnemyState::EES_Attacking) 
+	op(EEnemyState::EES_Attacking) \
+	op(EEnemyState::EES_Engaged) 
 
 enum class EEnemyState : uint8;
 template<> struct TIsUEnumClass<EEnemyState> { enum { Value = true }; };
