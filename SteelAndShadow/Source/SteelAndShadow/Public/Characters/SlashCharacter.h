@@ -25,7 +25,6 @@ protected:
 	void EKeyPressed();
 	virtual void Attack() override;
 
-	virtual void PlayAttackMontage() override;
 	void PlayEquipMontage(const FName& SectionName);
 
 	virtual bool CanAttack() override;
