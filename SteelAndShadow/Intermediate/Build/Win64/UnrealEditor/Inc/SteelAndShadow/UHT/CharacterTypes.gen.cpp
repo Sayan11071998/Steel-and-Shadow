@@ -227,6 +227,8 @@ struct Z_Construct_UEnum_SteelAndShadow_EEnemyState_Statics
 		{ "EES_Dead.Name", "EEnemyState::EES_Dead" },
 		{ "EES_Engaged.DisplayName", "Engaged" },
 		{ "EES_Engaged.Name", "EEnemyState::EES_Engaged" },
+		{ "EES_NoState.DisplayName", "NoState" },
+		{ "EES_NoState.Name", "EEnemyState::EES_NoState" },
 		{ "EES_Patrolling.DisplayName", "Patrolling" },
 		{ "EES_Patrolling.Name", "EEnemyState::EES_Patrolling" },
 		{ "ModuleRelativePath", "Public/Characters/CharacterTypes.h" },
@@ -238,6 +240,7 @@ struct Z_Construct_UEnum_SteelAndShadow_EEnemyState_Statics
 		{ "EEnemyState::EES_Chasing", (int64)EEnemyState::EES_Chasing },
 		{ "EEnemyState::EES_Attacking", (int64)EEnemyState::EES_Attacking },
 		{ "EEnemyState::EES_Engaged", (int64)EEnemyState::EES_Engaged },
+		{ "EEnemyState::EES_NoState", (int64)EEnemyState::EES_NoState },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
 };
@@ -270,10 +273,10 @@ struct Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndS
 		{ ECharacterState_StaticEnum, TEXT("ECharacterState"), &Z_Registration_Info_UEnum_ECharacterState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 223662205U) },
 		{ EActionState_StaticEnum, TEXT("EActionState"), &Z_Registration_Info_UEnum_EActionState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1603962153U) },
 		{ EDeathPose_StaticEnum, TEXT("EDeathPose"), &Z_Registration_Info_UEnum_EDeathPose, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1534896707U) },
-		{ EEnemyState_StaticEnum, TEXT("EEnemyState"), &Z_Registration_Info_UEnum_EEnemyState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 972458195U) },
+		{ EEnemyState_StaticEnum, TEXT("EEnemyState"), &Z_Registration_Info_UEnum_EEnemyState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 570411469U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_CharacterTypes_h_3767518857(TEXT("/Script/SteelAndShadow"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_CharacterTypes_h_182846140(TEXT("/Script/SteelAndShadow"),
 	nullptr, 0,
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_CharacterTypes_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_CharacterTypes_h_Statics::EnumInfo));
