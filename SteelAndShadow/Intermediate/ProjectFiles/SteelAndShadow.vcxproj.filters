@@ -56,6 +56,9 @@
     <Filter Include="Source\SteelAndShadow\Private\Characters">
       <UniqueIdentifier>{E488934A-865A-3909-B62D-0A333F49E89E}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Characters\BaseCharacter.cpp">
+      <Filter>Source\SteelAndShadow\Private\Characters</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Characters\SlashAnimInstance.cpp">
       <Filter>Source\SteelAndShadow\Private\Characters</Filter>
     </ClCompile>
@@ -122,6 +125,9 @@
     <Filter Include="Source\SteelAndShadow\Public\Characters">
       <UniqueIdentifier>{10AE598B-A47D-3D5D-A091-B4E374616BE8}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\BaseCharacter.h">
+      <Filter>Source\SteelAndShadow\Public\Characters</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Characters\CharacterTypes.h">
       <Filter>Source\SteelAndShadow\Public\Characters</Filter>
     </ClInclude>

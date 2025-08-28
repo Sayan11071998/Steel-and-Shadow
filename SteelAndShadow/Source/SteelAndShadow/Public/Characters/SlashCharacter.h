@@ -1,58 +1,52 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "BaseCharacter.h"
 #include "CharacterTypes.h"
 #include "SlashCharacter.generated.h"
 
 UCLASS()
-class STEELANDSHADOW_API ASlashCharacter : public ACharacter
+class STEELANDSHADOW_API ASlashCharacter : public ABaseCharacter
 {
 	GENERATED_BODY()
 
 public:
 	ASlashCharacter();
-	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	UFUNCTION(BlueprintCallable)
-	void SetWeaponCollisionEnabled(ECollisionEnabled::Type CollisionEnabled);
+	virtual void GetHit_Implementation(const FVector& ImpactPoint) override;
 
 protected:
 	virtual void BeginPlay() override;
 
+	/** Callback for Inputs */
 	void MoveForward(float Value);
 	void MoveRight(float Value);
 	void Turn(float Value);
 	void LookUp(float Value);
 	void EKeyPressed();
-	void Attack();
+	virtual void Attack() override;
 
-	void PlayAttackMontage();
-	void PlayEquipMontage(const FName& SectionName);
-
-	bool CanAttack();
-	bool CanDisarm();
+	/** Combat */
+	void EquipWeapon(AWeapon* Weapon);
+	virtual void AttackEnd() override;
+	virtual bool CanAttack() override;
 	bool CanArm();
-
-	UFUNCTION(BlueprintCallable)
-	void AttackEnd();
-
-	UFUNCTION(BlueprintCallable)
+	bool CanDisarm();
 	void Arm();
+	void Disarm();
+	void PlayEquipMontage(const FName& SectionName);
+	
+	UFUNCTION(BlueprintCallable)
+	void AttachWeaponToHand();
 
 	UFUNCTION(BlueprintCallable)
-	void Disarm();
+	void AttachWeaponToBack();
 
 	UFUNCTION(BlueprintCallable)
 	void FinishEquipping();
 
 private:
-	ECharacterState CharacterState = ECharacterState::ECS_Unequipped;
-
-	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-	EActionState ActionState = EActionState::EAS_Unoccupied;
-
 	UPROPERTY(VisibleAnywhere)
 	class USpringArmComponent* CameraBoom;
 
@@ -69,13 +63,12 @@ private:
 	class AItem* OverlappingItem;
 
 	UPROPERTY(EditDefaultsOnly, Category = Montages)
-	class UAnimMontage* AttackMontage;
-
-	UPROPERTY(EditDefaultsOnly, Category = Montages)
 	class UAnimMontage* EquipMontage;
 
-	UPROPERTY(VisibleAnywhere, Category = Weapon)
-	class AWeapon* EquippedWeapon;
+	ECharacterState CharacterState = ECharacterState::ECS_Unequipped;
+
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	EActionState ActionState = EActionState::EAS_Unoccupied;
 
 public:
 	FORCEINLINE void SetOverlappingItem(class AItem* Item) { OverlappingItem = Item; }
