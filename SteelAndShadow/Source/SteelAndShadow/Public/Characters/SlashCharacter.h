@@ -12,12 +12,12 @@ class STEELANDSHADOW_API ASlashCharacter : public ABaseCharacter
 
 public:
 	ASlashCharacter();
-	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 protected:
 	virtual void BeginPlay() override;
 
+	/** Callback for Inputs */
 	void MoveForward(float Value);
 	void MoveRight(float Value);
 	void Turn(float Value);
@@ -25,29 +25,26 @@ protected:
 	void EKeyPressed();
 	virtual void Attack() override;
 
-	void PlayEquipMontage(const FName& SectionName);
-
-	virtual bool CanAttack() override;
-	bool CanDisarm();
-	bool CanArm();
-
+	/** Combat */
+	void EquipWeapon(AWeapon* Weapon);
 	virtual void AttackEnd() override;
-
-	UFUNCTION(BlueprintCallable)
+	virtual bool CanAttack() override;
+	bool CanArm();
+	bool CanDisarm();
 	void Arm();
+	void Disarm();
+	void PlayEquipMontage(const FName& SectionName);
+	
+	UFUNCTION(BlueprintCallable)
+	void AttachWeaponToHand();
 
 	UFUNCTION(BlueprintCallable)
-	void Disarm();
+	void AttachWeaponToBack();
 
 	UFUNCTION(BlueprintCallable)
 	void FinishEquipping();
 
 private:
-	ECharacterState CharacterState = ECharacterState::ECS_Unequipped;
-
-	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-	EActionState ActionState = EActionState::EAS_Unoccupied;
-
 	UPROPERTY(VisibleAnywhere)
 	class USpringArmComponent* CameraBoom;
 
@@ -65,6 +62,11 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = Montages)
 	class UAnimMontage* EquipMontage;
+
+	ECharacterState CharacterState = ECharacterState::ECS_Unequipped;
+
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	EActionState ActionState = EActionState::EAS_Unoccupied;
 
 public:
 	FORCEINLINE void SetOverlappingItem(class AItem* Item) { OverlappingItem = Item; }

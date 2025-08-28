@@ -15,8 +15,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define STEELANDSHADOW_BaseCharacter_generated_h
 
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execAttackEnd); \
-	DECLARE_FUNCTION(execSetWeaponCollisionEnabled);
+	DECLARE_FUNCTION(execSetWeaponCollisionEnabled); \
+	DECLARE_FUNCTION(execAttackEnd);
 
 
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_11_INCLASS_NO_PURE_DECLS \

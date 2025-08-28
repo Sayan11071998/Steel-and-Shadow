@@ -10,16 +10,17 @@ ABaseCharacter::ABaseCharacter()
 	PrimaryActorTick.bCanEverTick = true;
 
 	Attributes = CreateDefaultSubobject<UAttributeComponent>(TEXT("Attributes"));
-}
-
-void ABaseCharacter::BeginPlay()
-{
-	Super::BeginPlay();
+	GetCapsuleComponent()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
 }
 
 void ABaseCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+}
+
+void ABaseCharacter::BeginPlay()
+{
+	Super::BeginPlay();
 }
 
 void ABaseCharacter::SetWeaponCollisionEnabled(ECollisionEnabled::Type CollisionEnabled)
