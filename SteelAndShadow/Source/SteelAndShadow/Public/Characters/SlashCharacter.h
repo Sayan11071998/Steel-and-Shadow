@@ -46,6 +46,9 @@ protected:
 	UFUNCTION(BlueprintCallable)
 	void FinishEquipping();
 
+	UFUNCTION(BlueprintCallable)
+	void HitReactEnd();
+
 private:
 	UPROPERTY(VisibleAnywhere)
 	class USpringArmComponent* CameraBoom;
