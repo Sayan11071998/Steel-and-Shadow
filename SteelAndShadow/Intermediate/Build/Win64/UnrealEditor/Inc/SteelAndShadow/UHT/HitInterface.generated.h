@@ -9,13 +9,14 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef STEELANDSHADOW_HitInterface_generated_h
 #error "HitInterface.generated.h already included, missing '#pragma once' in HitInterface.h"
 #endif
 #define STEELANDSHADOW_HitInterface_generated_h
 
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Interfaces_HitInterface_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual void GetHit_Implementation(FVector const& Impactpoint) {}; \
+	virtual void GetHit_Implementation(FVector const& Impactpoint, AActor* Hitter) {}; \
 	DECLARE_FUNCTION(execGetHit);
 
 
@@ -57,7 +58,7 @@ protected: \
 public: \
 	typedef UHitInterface UClassType; \
 	typedef IHitInterface ThisClass; \
-	static void Execute_GetHit(UObject* O, FVector const& Impactpoint); \
+	static void Execute_GetHit(UObject* O, FVector const& Impactpoint, AActor* Hitter); \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 

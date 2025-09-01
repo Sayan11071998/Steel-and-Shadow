@@ -16,5 +16,5 @@ class STEELANDSHADOW_API IHitInterface
 
 public:
 	UFUNCTION(BlueprintNativeEvent)
-	void GetHit(const FVector& Impactpoint);
+	void GetHit(const FVector& Impactpoint, AActor* Hitter);
 };
