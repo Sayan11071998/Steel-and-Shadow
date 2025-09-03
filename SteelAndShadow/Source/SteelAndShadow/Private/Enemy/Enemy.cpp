@@ -50,7 +50,15 @@ float AEnemy::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AC
 {
 	HandleDamage(DamageAmount);
 	CombatTarget = EventInstigator->GetPawn();
-	ChasteTarget();
+	
+	if (IsInsideAttackRadius())
+	{
+		EnemyState = EEnemyState::EES_Attacking;
+	}
+	else if (IsOutsideAttackRadius())
+	{
+		ChaseTarget();
+	}
 
 	return DamageAmount;
 }
@@ -63,21 +71,15 @@ void AEnemy::Destroyed()
 	}
 }
 
-void AEnemy::GetHit_Implementation(const FVector& ImpactPoint)
+void AEnemy::GetHit_Implementation(const FVector& ImpactPoint, AActor* Hitter)
 {
-	ShowHealthBar();
+	Super::GetHit_Implementation(ImpactPoint, Hitter);
+	if (!IsDead()) ShowHealthBar();
+	ClearPatrolTimer();
+	ClearAttackTimer();
+	SetWeaponCollisionEnabled(ECollisionEnabled::NoCollision);
 
-	if (IsAlive())
-	{
-		DirectionHitReact(ImpactPoint);
-	}
-	else
-	{
-		Die();
-	}
-
-	PlayHitSound(ImpactPoint);
-	SpawnHitParticles(ImpactPoint);
+	StopAttackMontage();
 }
 
 void AEnemy::BeginPlay()
@@ -98,6 +100,7 @@ void AEnemy::Die()
 	DisableCapsule();
 	SetLifeSpan(DeathLifeSpan);
 	GetCharacterMovement()->bOrientRotationToMovement = false;
+	SetWeaponCollisionEnabled(ECollisionEnabled::NoCollision);
 }
 
 void AEnemy::Attack()
@@ -171,7 +174,7 @@ void AEnemy::CheckCombatTarget()
 	else if (IsOutsideAttackRadius() && !IsChasing())
 	{
 		ClearAttackTimer();
-		if (!IsEngaged()) ChasteTarget();
+		if (!IsEngaged()) ChaseTarget();
 	}
 	else if (CanAttack())
 	{
@@ -213,7 +216,7 @@ void AEnemy::StartPatroling()
 	MoveToTarget(PatrolTarget);
 }
 
-void AEnemy::ChasteTarget()
+void AEnemy::ChaseTarget()
 {
 	EnemyState = EEnemyState::EES_Chasing;
 	GetCharacterMovement()->MaxWalkSpeed = ChasingSpeed;
@@ -334,6 +337,6 @@ void AEnemy::PawnSeen(APawn* SeenPawn)
 	{
 		CombatTarget = SeenPawn;
 		ClearPatrolTimer();
-		ChasteTarget();
+		ChaseTarget();
 	}
 }

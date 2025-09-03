@@ -97,6 +97,8 @@ struct Z_Construct_UEnum_SteelAndShadow_EActionState_Statics
 		{ "EAS_Attaking.Name", "EActionState::EAS_Attaking" },
 		{ "EAS_EquippingWeapon.DisplayName", "EquippingWeapon" },
 		{ "EAS_EquippingWeapon.Name", "EActionState::EAS_EquippingWeapon" },
+		{ "EAS_HitReaction.DisplayName", "HitReaction" },
+		{ "EAS_HitReaction.Name", "EActionState::EAS_HitReaction" },
 		{ "EAS_Unoccupied.DisplayName", "Unoccupied" },
 		{ "EAS_Unoccupied.Name", "EActionState::EAS_Unoccupied" },
 		{ "ModuleRelativePath", "Public/Characters/CharacterTypes.h" },
@@ -104,6 +106,7 @@ struct Z_Construct_UEnum_SteelAndShadow_EActionState_Statics
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
 		{ "EActionState::EAS_Unoccupied", (int64)EActionState::EAS_Unoccupied },
+		{ "EActionState::EAS_HitReaction", (int64)EActionState::EAS_HitReaction },
 		{ "EActionState::EAS_Attaking", (int64)EActionState::EAS_Attaking },
 		{ "EActionState::EAS_EquippingWeapon", (int64)EActionState::EAS_EquippingWeapon },
 	};
@@ -235,12 +238,12 @@ struct Z_Construct_UEnum_SteelAndShadow_EEnemyState_Statics
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
+		{ "EEnemyState::EES_NoState", (int64)EEnemyState::EES_NoState },
 		{ "EEnemyState::EES_Dead", (int64)EEnemyState::EES_Dead },
 		{ "EEnemyState::EES_Patrolling", (int64)EEnemyState::EES_Patrolling },
 		{ "EEnemyState::EES_Chasing", (int64)EEnemyState::EES_Chasing },
 		{ "EEnemyState::EES_Attacking", (int64)EEnemyState::EES_Attacking },
 		{ "EEnemyState::EES_Engaged", (int64)EEnemyState::EES_Engaged },
-		{ "EEnemyState::EES_NoState", (int64)EEnemyState::EES_NoState },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
 };
@@ -271,12 +274,12 @@ struct Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndS
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ ECharacterState_StaticEnum, TEXT("ECharacterState"), &Z_Registration_Info_UEnum_ECharacterState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 223662205U) },
-		{ EActionState_StaticEnum, TEXT("EActionState"), &Z_Registration_Info_UEnum_EActionState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1603962153U) },
+		{ EActionState_StaticEnum, TEXT("EActionState"), &Z_Registration_Info_UEnum_EActionState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3482317868U) },
 		{ EDeathPose_StaticEnum, TEXT("EDeathPose"), &Z_Registration_Info_UEnum_EDeathPose, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1534896707U) },
-		{ EEnemyState_StaticEnum, TEXT("EEnemyState"), &Z_Registration_Info_UEnum_EEnemyState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 570411469U) },
+		{ EEnemyState_StaticEnum, TEXT("EEnemyState"), &Z_Registration_Info_UEnum_EEnemyState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2512609923U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_CharacterTypes_h_182846140(TEXT("/Script/SteelAndShadow"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_CharacterTypes_h_3543531132(TEXT("/Script/SteelAndShadow"),
 	nullptr, 0,
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_CharacterTypes_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_CharacterTypes_h_Statics::EnumInfo));
