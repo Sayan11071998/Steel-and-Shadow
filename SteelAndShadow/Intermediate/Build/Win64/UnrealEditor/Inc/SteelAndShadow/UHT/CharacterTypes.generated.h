@@ -46,12 +46,12 @@ template<> STEELANDSHADOW_API UEnum* StaticEnum<EActionState>();
 	op(EDP_Death5) \
 	op(EDP_Death6) 
 #define FOREACH_ENUM_EENEMYSTATE(op) \
+	op(EEnemyState::EES_NoState) \
 	op(EEnemyState::EES_Dead) \
 	op(EEnemyState::EES_Patrolling) \
 	op(EEnemyState::EES_Chasing) \
 	op(EEnemyState::EES_Attacking) \
-	op(EEnemyState::EES_Engaged) \
-	op(EEnemyState::EES_NoState) 
+	op(EEnemyState::EES_Engaged) 
 
 enum class EEnemyState : uint8;
 template<> struct TIsUEnumClass<EEnemyState> { enum { Value = true }; };
