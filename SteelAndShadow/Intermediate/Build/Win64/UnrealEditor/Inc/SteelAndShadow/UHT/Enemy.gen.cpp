@@ -20,7 +20,6 @@ STEELANDSHADOW_API UClass* Z_Construct_UClass_AEnemy();
 STEELANDSHADOW_API UClass* Z_Construct_UClass_AEnemy_NoRegister();
 STEELANDSHADOW_API UClass* Z_Construct_UClass_AWeapon_NoRegister();
 STEELANDSHADOW_API UClass* Z_Construct_UClass_UHealthBarComponent_NoRegister();
-STEELANDSHADOW_API UEnum* Z_Construct_UEnum_SteelAndShadow_EDeathPose();
 STEELANDSHADOW_API UEnum* Z_Construct_UEnum_SteelAndShadow_EEnemyState();
 UPackage* Z_Construct_UPackage__Script_SteelAndShadow();
 // End Cross Module References
@@ -89,7 +88,7 @@ struct Z_Construct_UClass_AEnemy_Statics
 		{ "IncludePath", "Enemy/Enemy.h" },
 		{ "ModuleRelativePath", "Public/Enemy/Enemy.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DeathPose_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnemyState_MetaData[] = {
 		{ "Category", "Enemy" },
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** </ABaseCharacter> */" },
@@ -98,10 +97,6 @@ struct Z_Construct_UClass_AEnemy_Statics
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "</ABaseCharacter>" },
 #endif
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnemyState_MetaData[] = {
-		{ "Category", "Enemy" },
-		{ "ModuleRelativePath", "Public/Enemy/Enemy.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HealthBarWidget_MetaData[] = {
 		{ "Category", "Enemy" },
@@ -169,7 +164,6 @@ struct Z_Construct_UClass_AEnemy_Statics
 		{ "ModuleRelativePath", "Public/Enemy/Enemy.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FBytePropertyParams NewProp_DeathPose;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_EnemyState_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_EnemyState;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HealthBarWidget;
@@ -200,7 +194,6 @@ struct Z_Construct_UClass_AEnemy_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_DeathPose = { "DeathPose", nullptr, (EPropertyFlags)0x0020080000000014, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, DeathPose), Z_Construct_UEnum_SteelAndShadow_EDeathPose, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DeathPose_MetaData), NewProp_DeathPose_MetaData) }; // 1534896707
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_EnemyState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_EnemyState = { "EnemyState", nullptr, (EPropertyFlags)0x0020080000000014, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, EnemyState), Z_Construct_UEnum_SteelAndShadow_EEnemyState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnemyState_MetaData), NewProp_EnemyState_MetaData) }; // 2512609923
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_HealthBarWidget = { "HealthBarWidget", nullptr, (EPropertyFlags)0x00400000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, HealthBarWidget), Z_Construct_UClass_UHealthBarComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HealthBarWidget_MetaData), NewProp_HealthBarWidget_MetaData) };
@@ -221,7 +214,6 @@ const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemy_Statics:
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_ChasingSpeed = { "ChasingSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, ChasingSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ChasingSpeed_MetaData), NewProp_ChasingSpeed_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_DeathLifeSpan = { "DeathLifeSpan", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, DeathLifeSpan), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DeathLifeSpan_MetaData), NewProp_DeathLifeSpan_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemy_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_DeathPose,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_EnemyState_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_EnemyState,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_HealthBarWidget,
@@ -283,10 +275,10 @@ AEnemy::~AEnemy() {}
 struct Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AEnemy, AEnemy::StaticClass, TEXT("AEnemy"), &Z_Registration_Info_UClass_AEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemy), 3858486554U) },
+		{ Z_Construct_UClass_AEnemy, AEnemy::StaticClass, TEXT("AEnemy"), &Z_Registration_Info_UClass_AEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemy), 3748133942U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_2120112859(TEXT("/Script/SteelAndShadow"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_2739736794(TEXT("/Script/SteelAndShadow"),
 	Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Enemy_Enemy_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

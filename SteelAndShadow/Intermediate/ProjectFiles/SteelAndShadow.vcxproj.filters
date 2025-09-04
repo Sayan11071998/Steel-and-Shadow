@@ -86,6 +86,12 @@
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\HUD\HealthBarComponent.cpp">
       <Filter>Source\SteelAndShadow\Private\HUD</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\HUD\SlashHUD.cpp">
+      <Filter>Source\SteelAndShadow\Private\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\HUD\SlashOverlay.cpp">
+      <Filter>Source\SteelAndShadow\Private\HUD</Filter>
+    </ClCompile>
     <Filter Include="Source\SteelAndShadow\Private\Interfaces">
       <UniqueIdentifier>{0932C083-1486-3759-B6DB-EC9F3EA56F96}</UniqueIdentifier>
     </Filter>
@@ -156,6 +162,12 @@
       <Filter>Source\SteelAndShadow\Public\HUD</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\HUD\HealthBarComponent.h">
+      <Filter>Source\SteelAndShadow\Public\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\HUD\SlashHUD.h">
+      <Filter>Source\SteelAndShadow\Public\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\HUD\SlashOverlay.h">
       <Filter>Source\SteelAndShadow\Public\HUD</Filter>
     </ClInclude>
     <Filter Include="Source\SteelAndShadow\Public\Interfaces">

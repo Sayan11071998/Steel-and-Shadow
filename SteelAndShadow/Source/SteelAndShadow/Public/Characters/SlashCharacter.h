@@ -13,7 +13,8 @@ class STEELANDSHADOW_API ASlashCharacter : public ABaseCharacter
 public:
 	ASlashCharacter();
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
+	virtual void Jump() override;
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 	virtual void GetHit_Implementation(const FVector& ImpactPoint, AActor* Hitter) override;
 
 protected:
@@ -36,6 +37,7 @@ protected:
 	void Arm();
 	void Disarm();
 	void PlayEquipMontage(const FName& SectionName);
+	virtual void Die() override;
 	
 	UFUNCTION(BlueprintCallable)
 	void AttachWeaponToHand();
@@ -50,6 +52,10 @@ protected:
 	void HitReactEnd();
 
 private:
+	bool IsUnoccupied();
+	void InitializeSlashOverlay();
+	void SetHUDHealth();
+
 	UPROPERTY(VisibleAnywhere)
 	class USpringArmComponent* CameraBoom;
 
@@ -73,7 +79,11 @@ private:
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	EActionState ActionState = EActionState::EAS_Unoccupied;
 
+	UPROPERTY()
+	class USlashOverlay* SlashOverlay;
+
 public:
 	FORCEINLINE void SetOverlappingItem(class AItem* Item) { OverlappingItem = Item; }
 	FORCEINLINE ECharacterState GetCharacterState() const { return CharacterState; }
+	FORCEINLINE EActionState GetActionState() const { return ActionState; }
 };
