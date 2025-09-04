@@ -16,7 +16,9 @@ ENGINE_API UClass* Z_Construct_UClass_UCharacterMovementComponent_NoRegister();
 STEELANDSHADOW_API UClass* Z_Construct_UClass_ASlashCharacter_NoRegister();
 STEELANDSHADOW_API UClass* Z_Construct_UClass_USlashAnimInstance();
 STEELANDSHADOW_API UClass* Z_Construct_UClass_USlashAnimInstance_NoRegister();
+STEELANDSHADOW_API UEnum* Z_Construct_UEnum_SteelAndShadow_EActionState();
 STEELANDSHADOW_API UEnum* Z_Construct_UEnum_SteelAndShadow_ECharacterState();
+STEELANDSHADOW_API UEnum* Z_Construct_UEnum_SteelAndShadow_EDeathPose();
 UPackage* Z_Construct_UPackage__Script_SteelAndShadow();
 // End Cross Module References
 
@@ -55,7 +57,15 @@ struct Z_Construct_UClass_USlashAnimInstance_Statics
 		{ "ModuleRelativePath", "Public/Characters/SlashAnimInstance.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterState_MetaData[] = {
-		{ "Category", "Movement | Character State" },
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Public/Characters/SlashAnimInstance.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActionState_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Public/Characters/SlashAnimInstance.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DeathPose_MetaData[] = {
+		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Public/Characters/SlashAnimInstance.h" },
 	};
 #endif // WITH_METADATA
@@ -66,6 +76,9 @@ struct Z_Construct_UClass_USlashAnimInstance_Statics
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsFalling;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_CharacterState_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_CharacterState;
+	static const UECodeGen_Private::FBytePropertyParams NewProp_ActionState_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_ActionState;
+	static const UECodeGen_Private::FBytePropertyParams NewProp_DeathPose;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -83,6 +96,9 @@ void Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_IsFalling_SetBit(voi
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_IsFalling = { "IsFalling", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(USlashAnimInstance), &Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_IsFalling_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IsFalling_MetaData), NewProp_IsFalling_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_CharacterState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_CharacterState = { "CharacterState", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USlashAnimInstance, CharacterState), Z_Construct_UEnum_SteelAndShadow_ECharacterState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterState_MetaData), NewProp_CharacterState_MetaData) }; // 223662205
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_ActionState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_ActionState = { "ActionState", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USlashAnimInstance, ActionState), Z_Construct_UEnum_SteelAndShadow_EActionState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActionState_MetaData), NewProp_ActionState_MetaData) }; // 2412187837
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_DeathPose = { "DeathPose", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USlashAnimInstance, DeathPose), Z_Construct_UEnum_SteelAndShadow_EDeathPose, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DeathPose_MetaData), NewProp_DeathPose_MetaData) }; // 1534896707
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USlashAnimInstance_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_SlashCharacter,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_SlashCharacterMovement,
@@ -90,6 +106,9 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USlashAni
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_IsFalling,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_CharacterState_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_CharacterState,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_ActionState_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_ActionState,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USlashAnimInstance_Statics::NewProp_DeathPose,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_USlashAnimInstance_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_USlashAnimInstance_Statics::DependentSingletons[])() = {
@@ -133,10 +152,10 @@ USlashAnimInstance::~USlashAnimInstance() {}
 struct Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashAnimInstance_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USlashAnimInstance, USlashAnimInstance::StaticClass, TEXT("USlashAnimInstance"), &Z_Registration_Info_UClass_USlashAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USlashAnimInstance), 597054938U) },
+		{ Z_Construct_UClass_USlashAnimInstance, USlashAnimInstance::StaticClass, TEXT("USlashAnimInstance"), &Z_Registration_Info_UClass_USlashAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USlashAnimInstance), 321671212U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashAnimInstance_h_1869427459(TEXT("/Script/SteelAndShadow"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashAnimInstance_h_948017911(TEXT("/Script/SteelAndShadow"),
 	Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashAnimInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashAnimInstance_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
