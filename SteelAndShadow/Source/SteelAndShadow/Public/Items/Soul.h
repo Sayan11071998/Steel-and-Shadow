@@ -19,4 +19,11 @@ protected:
 		bool bFromSweep,
 		const FHitResult& SweepResult
 	) override;
+
+private:
+	UPROPERTY(EditAnywhere, Category = "Soul Properties")
+	int32 Souls;
+
+public:
+	FORCEINLINE int32 GetSouls() const { return Souls; }
 };
