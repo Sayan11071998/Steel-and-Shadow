@@ -9,7 +9,9 @@
             "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\source\\steelandshadow\\public\\items\\soul.h",
             "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\source\\steelandshadow\\public\\items\\item.h",
             "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\item.generated.h",
-            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\soul.generated.h"
+            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\soul.generated.h",
+            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\source\\steelandshadow\\public\\interfaces\\pickupinterface.h",
+            "c:\\users\\sayan\\projects\\steel-and-shadow\\steelandshadow\\intermediate\\build\\win64\\unrealeditor\\inc\\steelandshadow\\uht\\pickupinterface.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -3,10 +3,11 @@
 #include "CoreMinimal.h"
 #include "BaseCharacter.h"
 #include "CharacterTypes.h"
+#include "Interfaces/PickupInterface.h"
 #include "SlashCharacter.generated.h"
 
 UCLASS()
-class STEELANDSHADOW_API ASlashCharacter : public ABaseCharacter
+class STEELANDSHADOW_API ASlashCharacter : public ABaseCharacter, public IPickupInterface
 {
 	GENERATED_BODY()
 
@@ -14,8 +15,11 @@ public:
 	ASlashCharacter();
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	virtual void Jump() override;
+	
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 	virtual void GetHit_Implementation(const FVector& ImpactPoint, AActor* Hitter) override;
+	virtual void SetOverlappingItem(class AItem* Item) override;
+	virtual void AddSouls(class ASoul* Soul) override;
 
 protected:
 	virtual void BeginPlay() override;
@@ -83,7 +87,6 @@ private:
 	class USlashOverlay* SlashOverlay;
 
 public:
-	FORCEINLINE void SetOverlappingItem(class AItem* Item) { OverlappingItem = Item; }
 	FORCEINLINE ECharacterState GetCharacterState() const { return CharacterState; }
 	FORCEINLINE EActionState GetActionState() const { return ActionState; }
 };

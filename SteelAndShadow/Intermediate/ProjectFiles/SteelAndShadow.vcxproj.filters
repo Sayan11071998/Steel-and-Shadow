@@ -98,6 +98,9 @@
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Interfaces\HitInterface.cpp">
       <Filter>Source\SteelAndShadow\Private\Interfaces</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Interfaces\PickupInterface.cpp">
+      <Filter>Source\SteelAndShadow\Private\Interfaces</Filter>
+    </ClCompile>
     <Filter Include="Source\SteelAndShadow\Private\Items">
       <UniqueIdentifier>{6A600208-1427-38C0-9E11-A5BE93A28B47}</UniqueIdentifier>
     </Filter>
@@ -177,6 +180,9 @@
       <UniqueIdentifier>{C7A18858-5AB2-38EC-89BB-2DFA05E86976}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Interfaces\HitInterface.h">
+      <Filter>Source\SteelAndShadow\Public\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Interfaces\PickupInterface.h">
       <Filter>Source\SteelAndShadow\Public\Interfaces</Filter>
     </ClInclude>
     <Filter Include="Source\SteelAndShadow\Public\Items">
