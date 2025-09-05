@@ -104,6 +104,9 @@
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Item.cpp">
       <Filter>Source\SteelAndShadow\Private\Items</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Soul.cpp">
+      <Filter>Source\SteelAndShadow\Private\Items</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Treasure.cpp">
       <Filter>Source\SteelAndShadow\Private\Items</Filter>
     </ClCompile>
@@ -180,6 +183,9 @@
       <UniqueIdentifier>{D59A3E0D-F2D9-34EA-B33F-6750027E91A5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Item.h">
+      <Filter>Source\SteelAndShadow\Public\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Soul.h">
       <Filter>Source\SteelAndShadow\Public\Items</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Treasure.h">
