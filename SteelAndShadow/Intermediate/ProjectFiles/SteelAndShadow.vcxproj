@@ -298,7 +298,13 @@
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Interfaces\HitInterface.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Interfaces\PickupInterface.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Item.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Soul.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Treasure.cpp">
@@ -322,7 +328,9 @@
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\HUD\SlashHUD.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\HUD\SlashOverlay.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Interfaces\HitInterface.h"/>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Interfaces\PickupInterface.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Item.h"/>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Soul.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Treasure.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Weapons\Weapon.h"/>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Pawns\Bird.h"/>

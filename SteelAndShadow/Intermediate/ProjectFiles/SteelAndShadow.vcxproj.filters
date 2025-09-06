@@ -98,10 +98,16 @@
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Interfaces\HitInterface.cpp">
       <Filter>Source\SteelAndShadow\Private\Interfaces</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Interfaces\PickupInterface.cpp">
+      <Filter>Source\SteelAndShadow\Private\Interfaces</Filter>
+    </ClCompile>
     <Filter Include="Source\SteelAndShadow\Private\Items">
       <UniqueIdentifier>{6A600208-1427-38C0-9E11-A5BE93A28B47}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Item.cpp">
+      <Filter>Source\SteelAndShadow\Private\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Soul.cpp">
       <Filter>Source\SteelAndShadow\Private\Items</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SteelAndShadow\Private\Items\Treasure.cpp">
@@ -176,10 +182,16 @@
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Interfaces\HitInterface.h">
       <Filter>Source\SteelAndShadow\Public\Interfaces</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Interfaces\PickupInterface.h">
+      <Filter>Source\SteelAndShadow\Public\Interfaces</Filter>
+    </ClInclude>
     <Filter Include="Source\SteelAndShadow\Public\Items">
       <UniqueIdentifier>{D59A3E0D-F2D9-34EA-B33F-6750027E91A5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Item.h">
+      <Filter>Source\SteelAndShadow\Public\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Soul.h">
       <Filter>Source\SteelAndShadow\Public\Items</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SteelAndShadow\Public\Items\Treasure.h">

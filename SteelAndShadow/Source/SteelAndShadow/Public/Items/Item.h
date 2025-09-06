@@ -35,7 +35,7 @@ protected:
 	class USphereComponent* SphereComponent;
 
 	UPROPERTY(EditAnywhere)
-	class UNiagaraComponent* EmbersEffect;
+	class UNiagaraComponent* ItemEffect;
 
 	UFUNCTION(BlueprintPure)
 	float TransformedSin();
@@ -63,6 +63,9 @@ protected:
 		int32 OtherBodyIndex
 	);
 
+	virtual void SpawnPickupSystem();
+	virtual void SpawnPickupSound();
+
 	template<typename T>
 	T Avg(T First, T Second);
 
@@ -71,6 +74,12 @@ protected:
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	float RunningTime;
+
+	UPROPERTY(EditAnywhere)
+	class UNiagaraSystem* PickupEffect;
+
+	UPROPERTY(EditAnywhere)
+	USoundBase* PickupSound;
 };
 
 template<typename T>

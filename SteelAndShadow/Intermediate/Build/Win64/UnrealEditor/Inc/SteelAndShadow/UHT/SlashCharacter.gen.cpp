@@ -18,6 +18,7 @@ STEELANDSHADOW_API UClass* Z_Construct_UClass_ABaseCharacter();
 STEELANDSHADOW_API UClass* Z_Construct_UClass_AItem_NoRegister();
 STEELANDSHADOW_API UClass* Z_Construct_UClass_ASlashCharacter();
 STEELANDSHADOW_API UClass* Z_Construct_UClass_ASlashCharacter_NoRegister();
+STEELANDSHADOW_API UClass* Z_Construct_UClass_UPickupInterface_NoRegister();
 STEELANDSHADOW_API UClass* Z_Construct_UClass_USlashOverlay_NoRegister();
 STEELANDSHADOW_API UEnum* Z_Construct_UEnum_SteelAndShadow_EActionState();
 UPackage* Z_Construct_UPackage__Script_SteelAndShadow();
@@ -220,6 +221,7 @@ struct Z_Construct_UClass_ASlashCharacter_Statics
 		{ &Z_Construct_UFunction_ASlashCharacter_HitReactEnd, "HitReactEnd" }, // 105052294
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
+	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASlashCharacter>::IsAbstract,
 	};
@@ -232,7 +234,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASlashCharacte
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASlashCharacter_Statics::NewProp_OverlappingItem = { "OverlappingItem", nullptr, (EPropertyFlags)0x0040000000020801, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASlashCharacter, OverlappingItem), Z_Construct_UClass_AItem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverlappingItem_MetaData), NewProp_OverlappingItem_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASlashCharacter_Statics::NewProp_EquipMontage = { "EquipMontage", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASlashCharacter, EquipMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EquipMontage_MetaData), NewProp_EquipMontage_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_ASlashCharacter_Statics::NewProp_ActionState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_ASlashCharacter_Statics::NewProp_ActionState = { "ActionState", nullptr, (EPropertyFlags)0x0040000000000004, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASlashCharacter, ActionState), Z_Construct_UEnum_SteelAndShadow_EActionState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActionState_MetaData), NewProp_ActionState_MetaData) }; // 2412187837
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_ASlashCharacter_Statics::NewProp_ActionState = { "ActionState", nullptr, (EPropertyFlags)0x0040000000000004, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASlashCharacter, ActionState), Z_Construct_UEnum_SteelAndShadow_EActionState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActionState_MetaData), NewProp_ActionState_MetaData) }; // 916893763
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASlashCharacter_Statics::NewProp_SlashOverlay = { "SlashOverlay", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASlashCharacter, SlashOverlay), Z_Construct_UClass_USlashOverlay_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SlashOverlay_MetaData), NewProp_SlashOverlay_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASlashCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASlashCharacter_Statics::NewProp_CameraBoom,
@@ -251,6 +253,9 @@ UObject* (*const Z_Construct_UClass_ASlashCharacter_Statics::DependentSingletons
 	(UObject* (*)())Z_Construct_UPackage__Script_SteelAndShadow,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASlashCharacter_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ASlashCharacter_Statics::InterfaceParams[] = {
+	{ Z_Construct_UClass_UPickupInterface_NoRegister, (int32)VTABLE_OFFSET(ASlashCharacter, IPickupInterface), false },  // 3974036345
+};
 const UECodeGen_Private::FClassParams Z_Construct_UClass_ASlashCharacter_Statics::ClassParams = {
 	&ASlashCharacter::StaticClass,
 	"Game",
@@ -258,11 +263,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ASlashCharacter_Statics
 	DependentSingletons,
 	FuncInfo,
 	Z_Construct_UClass_ASlashCharacter_Statics::PropPointers,
-	nullptr,
+	InterfaceParams,
 	UE_ARRAY_COUNT(DependentSingletons),
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_ASlashCharacter_Statics::PropPointers),
-	0,
+	UE_ARRAY_COUNT(InterfaceParams),
 	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ASlashCharacter_Statics::Class_MetaDataParams), Z_Construct_UClass_ASlashCharacter_Statics::Class_MetaDataParams)
 };
@@ -286,10 +291,10 @@ ASlashCharacter::~ASlashCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASlashCharacter, ASlashCharacter::StaticClass, TEXT("ASlashCharacter"), &Z_Registration_Info_UClass_ASlashCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASlashCharacter), 2499965528U) },
+		{ Z_Construct_UClass_ASlashCharacter, ASlashCharacter::StaticClass, TEXT("ASlashCharacter"), &Z_Registration_Info_UClass_ASlashCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASlashCharacter), 1790980602U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_1491137174(TEXT("/Script/SteelAndShadow"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_1521043275(TEXT("/Script/SteelAndShadow"),
 	Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_SlashCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

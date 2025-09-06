@@ -16,6 +16,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetWeaponCollisionEnabled); \
+	DECLARE_FUNCTION(execDodgeEnd); \
 	DECLARE_FUNCTION(execAttackEnd); \
 	DECLARE_FUNCTION(execGetRotationWarpTarget); \
 	DECLARE_FUNCTION(execGetTranslationWarpTarget);

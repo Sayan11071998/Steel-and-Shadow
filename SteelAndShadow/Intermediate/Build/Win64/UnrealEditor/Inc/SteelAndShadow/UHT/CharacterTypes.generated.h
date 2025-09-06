@@ -33,6 +33,7 @@ template<> STEELANDSHADOW_API UEnum* StaticEnum<ECharacterState>();
 	op(EActionState::EAS_HitReaction) \
 	op(EActionState::EAS_Attaking) \
 	op(EActionState::EAS_EquippingWeapon) \
+	op(EActionState::EAS_Dodge) \
 	op(EActionState::EAS_Dead) 
 
 enum class EActionState : uint8;
