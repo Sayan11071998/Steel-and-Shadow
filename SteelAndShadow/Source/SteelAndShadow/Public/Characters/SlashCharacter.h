@@ -13,6 +13,7 @@ class STEELANDSHADOW_API ASlashCharacter : public ABaseCharacter, public IPickup
 
 public:
 	ASlashCharacter();
+	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	virtual void Jump() override;
 	
@@ -45,6 +46,8 @@ protected:
 	void Disarm();
 	void PlayEquipMontage(const FName& SectionName);
 	virtual void Die() override;
+	bool HasEnoughStamina();
+	bool IsOccupied();
 	
 	UFUNCTION(BlueprintCallable)
 	void AttachWeaponToHand();

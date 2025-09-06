@@ -22,8 +22,8 @@
 			"Treasure.gen.cpp.obj",
 			"Weapon.gen.cpp.obj",
 			"BreakableActor.cpp.obj",
+			"BaseCharacter.cpp.obj",
 			"SlashAnimInstance.cpp.obj",
-			"AttributeComponent.cpp.obj",
 			"Enemy.cpp.obj",
 			"HealthBar.cpp.obj",
 			"HealthBarComponent.cpp.obj",
@@ -37,8 +37,8 @@
 			"Weapon.cpp.obj",
 			"Bird.cpp.obj",
 			"SteelAndShadow.cpp.obj",
-			"BaseCharacter.cpp.obj",
-			"SlashCharacter.cpp.obj"
+			"SlashCharacter.cpp.obj",
+			"AttributeComponent.cpp.obj"
 		]
 	}
 }
