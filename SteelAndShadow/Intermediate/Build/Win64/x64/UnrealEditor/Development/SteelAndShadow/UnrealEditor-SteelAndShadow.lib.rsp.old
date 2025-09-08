@@ -10,5 +10,7 @@
 "C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\UnrealEditor\Development\SteelAndShadow\Module.SteelAndShadow.cpp.obj"
 "C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\UnrealEditor\Development\SteelAndShadow\SlashCharacter.cpp.obj"
 "C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\UnrealEditor\Development\SteelAndShadow\AttributeComponent.cpp.obj"
+"C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\UnrealEditor\Development\SteelAndShadow\AttributeComponent.gen.cpp.obj"
+"C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\UnrealEditor\Development\SteelAndShadow\SteelAndShadow.init.gen.cpp.obj"
 "C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\UnrealEditor\Development\SteelAndShadow\Default.rc2.res"
 /OUT:"C:\Users\sayan\Projects\Steel-and-Shadow\SteelAndShadow\Intermediate\Build\Win64\x64\UnrealEditor\Development\SteelAndShadow\UnrealEditor-SteelAndShadow.lib"

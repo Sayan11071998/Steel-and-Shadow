@@ -2,7 +2,6 @@
 	"RemapUnityFiles": 
 	{
 		"Module.SteelAndShadow.cpp.obj": [
-			"AttributeComponent.gen.cpp.obj",
 			"BaseCharacter.gen.cpp.obj",
 			"Bird.gen.cpp.obj",
 			"BreakableActor.gen.cpp.obj",
@@ -18,7 +17,6 @@
 			"SlashHUD.gen.cpp.obj",
 			"SlashOverlay.gen.cpp.obj",
 			"Soul.gen.cpp.obj",
-			"SteelAndShadow.init.gen.cpp.obj",
 			"Treasure.gen.cpp.obj",
 			"Weapon.gen.cpp.obj",
 			"BreakableActor.cpp.obj",
@@ -37,6 +35,8 @@
 			"Weapon.cpp.obj",
 			"Bird.cpp.obj",
 			"SteelAndShadow.cpp.obj",
+			"AttributeComponent.gen.cpp.obj",
+			"SteelAndShadow.init.gen.cpp.obj",
 			"SlashCharacter.cpp.obj",
 			"AttributeComponent.cpp.obj"
 		]
