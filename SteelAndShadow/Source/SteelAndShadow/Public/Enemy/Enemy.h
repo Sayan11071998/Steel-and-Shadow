@@ -30,7 +30,7 @@ protected:
 	/** </AActor> */
 
 	/** <ABaseCharacter> */
-	virtual void Die() override;
+	virtual void Die_Implementation() override;
 	void SpawnSoul(UWorld* World);
 	virtual void Attack() override;
 	virtual bool CanAttack() override;

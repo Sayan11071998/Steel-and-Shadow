@@ -32,6 +32,5 @@
 #include "C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Source/SteelAndShadow/Private/Items/Item.cpp"
 #include "C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Source/SteelAndShadow/Private/Items/Soul.cpp"
 #include "C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Source/SteelAndShadow/Private/Items/Treasure.cpp"
-#include "C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Source/SteelAndShadow/Private/Items/Weapons/Weapon.cpp"
 #include "C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Source/SteelAndShadow/Private/Pawns/Bird.cpp"
 #include "C:/Users/sayan/Projects/Steel-and-Shadow/SteelAndShadow/Source/SteelAndShadow/SteelAndShadow.cpp"

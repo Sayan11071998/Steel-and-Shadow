@@ -15,13 +15,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define STEELANDSHADOW_BaseCharacter_generated_h
 
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void Die_Implementation(); \
 	DECLARE_FUNCTION(execSetWeaponCollisionEnabled); \
 	DECLARE_FUNCTION(execDodgeEnd); \
 	DECLARE_FUNCTION(execAttackEnd); \
 	DECLARE_FUNCTION(execGetRotationWarpTarget); \
-	DECLARE_FUNCTION(execGetTranslationWarpTarget);
+	DECLARE_FUNCTION(execGetTranslationWarpTarget); \
+	DECLARE_FUNCTION(execDie);
 
 
+#define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_12_CALLBACK_WRAPPERS
 #define FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABaseCharacter(); \
@@ -49,6 +52,7 @@ public: \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_12_CALLBACK_WRAPPERS \
 	FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_12_INCLASS_NO_PURE_DECLS \
 	FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_12_ENHANCED_CONSTRUCTORS \
 private: \

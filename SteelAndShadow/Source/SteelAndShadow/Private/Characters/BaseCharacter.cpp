@@ -55,7 +55,7 @@ void ABaseCharacter::Attack()
 	}
 }
 
-void ABaseCharacter::Die()
+void ABaseCharacter::Die_Implementation()
 {
 	Tags.Add(FName("Dead"));
 	PlayDeathMontage();
