@@ -17,8 +17,6 @@
 			"SlashCharacter.gen.cpp.obj",
 			"SlashHUD.gen.cpp.obj",
 			"SlashOverlay.gen.cpp.obj",
-			"Soul.gen.cpp.obj",
-			"SteelAndShadow.init.gen.cpp.obj",
 			"Treasure.gen.cpp.obj",
 			"Weapon.gen.cpp.obj",
 			"BreakableActor.cpp.obj",
@@ -33,12 +31,14 @@
 			"HitInterface.cpp.obj",
 			"PickupInterface.cpp.obj",
 			"Item.cpp.obj",
-			"Soul.cpp.obj",
 			"Treasure.cpp.obj",
+			"Weapon.cpp.obj",
 			"Bird.cpp.obj",
 			"SteelAndShadow.cpp.obj",
+			"Soul.gen.cpp.obj",
+			"SteelAndShadow.init.gen.cpp.obj",
 			"Enemy.cpp.obj",
-			"Weapon.cpp.obj"
+			"Soul.cpp.obj"
 		]
 	}
 }
