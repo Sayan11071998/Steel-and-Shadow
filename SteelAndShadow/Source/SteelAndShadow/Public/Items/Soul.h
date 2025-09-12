@@ -9,7 +9,12 @@ class STEELANDSHADOW_API ASoul : public AItem
 {
 	GENERATED_BODY()
 
+public:
+	virtual void Tick(float DeltaTime) override;
+
 protected:
+	virtual void BeginPlay() override;
+
 	virtual void OnSphereOverlap
 	(
 		UPrimitiveComponent* OverlappedComponent,
@@ -23,6 +28,11 @@ protected:
 private:
 	UPROPERTY(EditAnywhere, Category = "Soul Properties")
 	int32 Souls;
+
+	UPROPERTY(EditAnywhere)
+	float DriftRate = -15.f;
+
+	double DesiredZ;
 
 public:
 	FORCEINLINE int32 GetSouls() const { return Souls; }

@@ -55,6 +55,40 @@ DEFINE_FUNCTION(ABaseCharacter::execAttackEnd)
 }
 // End Class ABaseCharacter Function AttackEnd
 
+// Begin Class ABaseCharacter Function Die
+static FName NAME_ABaseCharacter_Die = FName(TEXT("Die"));
+void ABaseCharacter::Die()
+{
+	ProcessEvent(FindFunctionChecked(NAME_ABaseCharacter_Die),NULL);
+}
+struct Z_Construct_UFunction_ABaseCharacter_Die_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Characters/BaseCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_Die_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, nullptr, "Die", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_Die_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacter_Die_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_ABaseCharacter_Die()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacter_Die_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ABaseCharacter::execDie)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->Die_Implementation();
+	P_NATIVE_END;
+}
+// End Class ABaseCharacter Function Die
+
 // Begin Class ABaseCharacter Function DodgeEnd
 struct Z_Construct_UFunction_ABaseCharacter_DodgeEnd_Statics
 {
@@ -214,6 +248,7 @@ void ABaseCharacter::StaticRegisterNativesABaseCharacter()
 	UClass* Class = ABaseCharacter::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "AttackEnd", &ABaseCharacter::execAttackEnd },
+		{ "Die", &ABaseCharacter::execDie },
 		{ "DodgeEnd", &ABaseCharacter::execDodgeEnd },
 		{ "GetRotationWarpTarget", &ABaseCharacter::execGetRotationWarpTarget },
 		{ "GetTranslationWarpTarget", &ABaseCharacter::execGetTranslationWarpTarget },
@@ -307,6 +342,7 @@ struct Z_Construct_UClass_ABaseCharacter_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABaseCharacter_AttackEnd, "AttackEnd" }, // 2693290450
+		{ &Z_Construct_UFunction_ABaseCharacter_Die, "Die" }, // 3393099770
 		{ &Z_Construct_UFunction_ABaseCharacter_DodgeEnd, "DodgeEnd" }, // 3423708730
 		{ &Z_Construct_UFunction_ABaseCharacter_GetRotationWarpTarget, "GetRotationWarpTarget" }, // 719767295
 		{ &Z_Construct_UFunction_ABaseCharacter_GetTranslationWarpTarget, "GetTranslationWarpTarget" }, // 2649329017
@@ -395,10 +431,10 @@ ABaseCharacter::~ABaseCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 2793350859U) },
+		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 3131543548U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_3708357946(TEXT("/Script/SteelAndShadow"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_2926431037(TEXT("/Script/SteelAndShadow"),
 	Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sayan_Projects_Steel_and_Shadow_SteelAndShadow_Source_SteelAndShadow_Public_Characters_BaseCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
