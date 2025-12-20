@@ -2,9 +2,6 @@
 
 A third-person action RPG built with Unreal Engine 5. Think Dark Souls combat meets character progression systems—dodge, parry, collect souls, and fight intelligent AI enemies.
 
-![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5-blue)
-![C++](https://img.shields.io/badge/C++-17-brightgreen)
-
 ## What It Does
 
 This is a souls-like combat game where timing matters. You've got stamina-based dodging with i-frames, melee combos, and enemies that actually hunt you down. Break stuff to get loot, collect souls for progression, and try not to die.
